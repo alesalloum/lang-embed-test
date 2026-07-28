@@ -1,0 +1,28 @@
+{
+  "method": "UMAP",
+  "n_neighbors": 15,
+  "min_dist": 0.1,
+  "metric": "cosine",
+  "random_state": 42,
+  "n_points": 600,
+  "embedding_source": "data/embeddings/qwen3-embedding-0.6b",
+  "encoding": {
+    "topic_markers": {
+      "ai_coding_innovations": "o",
+      "ai_copyright_theft": "s",
+      "ai_mass_surveillance": "^"
+    },
+    "language_colors": {
+      "en": "#1f77b4",
+      "es": "#ff7f0e",
+      "ar": "#2ca02c",
+      "zh": "#d62728"
+    }
+  },
+  "files": {
+    "umap_scatter.png": "2D scatter plot (PNG)",
+    "umap_scatter.pdf": "2D scatter plot (PDF)",
+    "umap_coords.npy": "(n, 2) float32 UMAP coordinates",
+    "umap_coords.jsonl": "Coordinates with topic/language metadata"
+  }
+}

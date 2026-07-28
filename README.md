@@ -29,3 +29,12 @@ Regenerate with:
 pip install -r requirements.txt
 python scripts/embed_posts.py
 ```
+
+## UMAP plot
+
+2D UMAP scatter (topic = marker shape, language = color) is written to
+[`results/`](results/):
+
+```bash
+python scripts/plot_umap.py
+```
