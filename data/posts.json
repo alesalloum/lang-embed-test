@@ -1,0 +1,1679 @@
+{
+  "description": "Toy multilingual social-media posts for testing whether embedding models cluster by semantic topic rather than by language under k-means.",
+  "topics": {
+    "ai_coding_innovations": {
+      "label": "AI innovations in coding",
+      "description": "Posts about AI tools improving software development, coding assistants, and engineering productivity."
+    },
+    "ai_copyright_theft": {
+      "label": "AI theft of artistic and authors' copyrights",
+      "description": "Posts about generative AI copying artists/writers without consent or compensation."
+    },
+    "ai_mass_surveillance": {
+      "label": "AI-enabled mass surveillance",
+      "description": "Posts about facial recognition, predictive policing, and AI monitoring of populations."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "ar": "Arabic",
+    "es": "Spanish",
+    "zh": "Chinese (Simplified)"
+  },
+  "n_topics": 3,
+  "n_posts_per_topic": 50,
+  "n_languages": 4,
+  "n_records_flat": 600,
+  "posts": [
+    {
+      "post_id": "ai_coding_innovations_001",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Just shipped a feature in half the time thanks to my AI coding assistant. The autocomplete actually understood my intent this sprint.",
+        "es": "Acabo de enviar una función en la mitad de tiempo gracias a mi asistente de codificación de IA. El autocompletar realmente entendió mi intención en este sprint.",
+        "ar": "لقد قمت للتو بشحن ميزة في نصف الوقت بفضل مساعد البرمجة الذي يعمل بالذكاء الاصطناعي. لقد فهم الإكمال التلقائي بالفعل نيتي في هذا السباق.",
+        "zh": "多亏了我的人工智能编码助手，我们才用一半的时间发布了一个功能。自动完成实际上理解了我这个冲刺的意图。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_002",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Hot take: AI pair programmers won't replace developers, but developers who ignore them will get left behind.",
+        "es": "Punto caliente: los programadores de pares de IA no reemplazarán a los desarrolladores, pero los desarrolladores que los ignoren se quedarán atrás.",
+        "ar": "ملاحظة هامة: لن يحل مبرمجو الذكاء الاصطناعي محل المطورين، لكن المطورين الذين يتجاهلونهم سيتخلفون عن الركب.",
+        "zh": "热门观点：人工智能结对程序员不会取代开发人员，但忽视他们的开发人员将会被抛在后面。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_003",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Spent the morning refactoring legacy Python with Copilot-style suggestions. It caught three edge cases I would have missed.",
+        "es": "Pasé la mañana refactorizando Python heredado con sugerencias estilo Copilot. Captó tres casos extremos que habría pasado por alto.",
+        "ar": "أمضيت الصباح في إعادة هيكلة لغة بايثون القديمة باقتراحات على طراز مساعد الطيار. لقد اشتعلت ثلاث حالات حافة كنت سأفتقدها.",
+        "zh": "花了一上午的时间用 Copilot 风格的建议重构旧版 Python。它抓住了我可能会错过的三个边缘情况。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_004",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Our team cut PR review time by 40% after adding an AI lint that explains *why* a change is risky.",
+        "es": "Nuestro equipo redujo el tiempo de revisión de relaciones públicas en un 40 % después de agregar una pelusa de IA que explica *por qué* un cambio es riesgoso.",
+        "ar": "قام فريقنا بتقليل وقت مراجعة العلاقات العامة بنسبة 40% بعد إضافة خيط الذكاء الاصطناعي الذي يشرح *سبب* خطورة التغيير.",
+        "zh": "在添加 AI lint 来解释“为什么”更改存在风险后，我们的团队将 PR 审核时间缩短了 40%。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_005",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Tried generating unit tests with an LLM today. Coverage jumped from 62% to 89% before lunch.",
+        "es": "Intenté generar pruebas unitarias con un LLM hoy. La cobertura saltó del 62 % al 89 % antes del almuerzo.",
+        "ar": "حاولت توليد اختبارات الوحدة مع LLM اليوم. وقفزت التغطية من 62% إلى 89% قبل الغداء.",
+        "zh": "今天尝试用法学硕士进行发电机单元测试。午餐前覆盖率从 62% 跃升至 89%。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_006",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "The new AI debugger in my IDE traced a race condition across three services. Felt like science fiction.",
+        "es": "El nuevo depurador de IA en mi IDE rastreó una condición de carrera en tres servicios. Parecía ciencia ficción.",
+        "ar": "قام مصحح أخطاء الذكاء الاصطناعي الجديد في IDE بتتبع حالة السباق عبر ثلاث خدمات. شعرت وكأنها خيال علمي.",
+        "zh": "我的 IDE 中的新 AI 调试器跟踪了三个服务之间的竞争条件。感觉就像科幻小说一样。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_007",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Prompting an AI to draft SQL migrations saved me from a midnight outage. Still reviewed every line, but wow.",
+        "es": "Solicitar a una IA que redactara migraciones de SQL me salvó de una interrupción a medianoche. Todavía revisé cada línea, pero vaya.",
+        "ar": "إن مطالبة الذكاء الاصطناعي بصياغة عمليات ترحيل SQL أنقذتني من انقطاع الخدمة في منتصف الليل. مازلت أراجع كل سطر، لكن رائع.",
+        "zh": "提示 AI 起草 SQL 迁移使我免于午夜停机。仍然审查了每一行，但是哇。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_008",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Junior eng on my team used an AI tutor to learn Rust concurrency. They're shipping production code in weeks, not months.",
+        "es": "El ingeniero junior de mi equipo utilizó un tutor de inteligencia artificial para aprender la concurrencia de Rust. Están enviando el código de producción en semanas, no en meses.",
+        "ar": "استخدم المهندس المبتدئ في فريقي مدرسًا خاصًا بالذكاء الاصطناعي لتعلم التزامن Rust. إنهم يقومون بشحن رمز الإنتاج خلال أسابيع، وليس أشهر.",
+        "zh": "我团队的初级工程师使用 AI 导师来学习 Rust 并发。他们在几周而不是几个月内交付生产代码。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_009",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "AI-assisted code search found the exact helper function buried in a monorepo of 2M lines. Search is finally useful.",
+        "es": "La búsqueda de código asistida por IA encontró la función auxiliar exacta oculta en un monorepo de 2 millones de líneas. La búsqueda finalmente es útil.",
+        "ar": "عثر البحث عن الكود بمساعدة الذكاء الاصطناعي على الوظيفة المساعدة الدقيقة المدفونة في مجموعة أحادية مكونة من 2 مليون سطر. البحث مفيد في النهاية.",
+        "zh": "AI 辅助代码搜索发现了埋藏在 200 万行 monorepo 中的确切辅助函数。搜索终于有用了。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_010",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "We're experimenting with AI-generated API docs from OpenAPI specs. Onboarding new hires is dramatically smoother.",
+        "es": "Estamos experimentando con documentos API generados por IA a partir de especificaciones de OpenAPI. La incorporación de nuevos empleados es mucho más sencilla.",
+        "ar": "نحن نقوم بتجربة مستندات API التي تم إنشاؤها بواسطة الذكاء الاصطناعي من مواصفات OpenAPI. أصبح تأهيل الموظفين الجدد أكثر سلاسة بشكل كبير.",
+        "zh": "我们正在试验根据 OpenAPI 规范由 AI 生成的 API 文档。新员工入职变得更加顺利。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_011",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Natural language to Terraform is getting scary good. I described a VPC layout and got a solid first draft.",
+        "es": "El lenguaje natural de Terraform se está volviendo terriblemente bueno. Describí un diseño de VPC y obtuve un primer borrador sólido.",
+        "ar": "أصبحت اللغة الطبيعية في Terraform جيدة بشكل مخيف. لقد وصفت تخطيط VPC وحصلت على مسودة أولى قوية.",
+        "zh": "Terraform 的自然语言变得越来越好。我描述了一个 VPC 布局并获得了可靠的初稿。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_012",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "My terminal now has an AI that explains cryptic compiler errors in plain English. Peak 2020s developer experience.",
+        "es": "Mi terminal ahora tiene una IA que explica los errores crípticos del compilador en un lenguaje sencillo. Experiencia máxima para desarrolladores de la década de 2020.",
+        "ar": "تحتوي المحطة الطرفية الخاصة بي الآن على الذكاء الاصطناعي الذي يشرح أخطاء المترجم المبهمة باللغة الإنجليزية البسيطة. تجربة المطورين في ذروة 2020.",
+        "zh": "我的终端现在有一个人工智能，可以用简单的英语解释神秘的编译器错误。 2020 年代的巅峰开发者体验。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_013",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Used an AI to migrate a React class component mess to hooks. It preserved behavior and cleaned naming conventions.",
+        "es": "Usé una IA para migrar un desorden de componentes de clase React a ganchos. Preservó el comportamiento y limpió las convenciones de nomenclatura.",
+        "ar": "استخدم الذكاء الاصطناعي لترحيل فوضى مكونات فئة React إلى الخطافات. لقد حافظ على السلوك ونظف اصطلاحات التسمية.",
+        "zh": "使用 AI 将 React 类组件混乱迁移到钩子。它保留了行为并清理了命名约定。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_014",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "The best coding AIs aren't the ones that write the most code — they're the ones that ask clarifying questions first.",
+        "es": "Las mejores IA de codificación no son las que escriben la mayor cantidad de código, sino las que hacen preguntas aclaratorias primero.",
+        "ar": "أفضل أنظمة الذكاء الاصطناعي للتشفير ليست هي التي تكتب معظم التعليمات البرمجية، بل هي التي تطرح أسئلة توضيحية أولاً.",
+        "zh": "最好的编码人工智能并不是那些编写最多代码的人工智能，而是那些首先提出澄清问题的人工智能。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_015",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Automated dependency upgrades via AI PRs: 18 merged this week, zero rollbacks. Cautiously optimistic.",
+        "es": "Actualizaciones de dependencia automatizadas a través de relaciones públicas de IA: 18 fusionadas esta semana, cero reversiones. Cautelosamente optimista.",
+        "ar": "ترقيات التبعية التلقائية عبر AI PRs: تم دمج 18 هذا الأسبوع، ولم يتم التراجع عن أي شيء. متفائل بحذر.",
+        "zh": "通过 AI PR 自动依赖项升级：本周合并 18 个，零回滚。谨慎乐观。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_016",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Voice-to-code demos still feel gimmicky, but dictating a regex and getting a correct one back? I'll take it.",
+        "es": "Las demostraciones de voz a código todavía parecen efectistas, pero ¿dictar una expresión regular y recuperar la correcta? Me lo llevo.",
+        "ar": "لا تزال العروض التوضيحية لتحويل الصوت إلى رمز تبدو غريبة، ولكن هل تريد إملاء تعبير عادي والحصول على واحد صحيح مرة أخرى؟ أنا أعتبر.",
+        "zh": "语音到代码的演示仍然感觉很花哨，但是口述正则表达式并得到正确的正则表达式？我要买它。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_017",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Our CI now runs an AI flaky-test analyzer. It clustered failures by root cause instead of blaming 'randomness'.",
+        "es": "Nuestro CI ahora ejecuta un analizador de pruebas inestables de IA. Agrupó los fallos por causa raíz en lugar de culpar a la \"aleatoriedad\".",
+        "ar": "يقوم CI لدينا الآن بتشغيل محلل اختبار غير مستقر للذكاء الاصطناعي. لقد قام بتجميع حالات الفشل حسب السبب الجذري بدلاً من إلقاء اللوم على \"العشوائية\".",
+        "zh": "我们的 CI 现在运行一个 AI 片状测试分析器。它根据根本原因对故障进行聚类，而不是归咎于“随机性”。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_018",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Sketching architecture on a whiteboard, photographing it, and getting a sequence diagram back from AI. Wild workflow.",
+        "es": "Dibujar arquitectura en una pizarra, fotografiarla y obtener un diagrama de secuencia de la IA. Flujo de trabajo salvaje.",
+        "ar": "رسم الهندسة المعمارية على السبورة البيضاء، وتصويرها، والحصول على مخطط تسلسلي من الذكاء الاصطناعي. سير العمل البرية.",
+        "zh": "在白板上绘制架构草图，拍摄照片，然后从人工智能返回序列图。狂野的工作流程。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_019",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "I asked an AI to explain our auth middleware like I was new. It was clearer than our wiki. Embarrassing and useful.",
+        "es": "Le pedí a una IA que explicara nuestro middleware de autenticación como si fuera nuevo. Era más claro que nuestra wiki. Vergonzoso y útil.",
+        "ar": "لقد طلبت من الذكاء الاصطناعي أن يشرح لنا برنامج المصادقة الوسيط الخاص بنا كما لو كنت جديدًا. لقد كان الأمر أكثر وضوحًا من الويكي الخاص بنا. محرجة ومفيدة.",
+        "zh": "我要求人工智能解释我们的身份验证中间件，就像我是新来的一样。它比我们的维基更清晰。尴尬又有用。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_020",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Code review bots that suggest alternative algorithms with Big-O tradeoffs are changing how we mentor juniors.",
+        "es": "Los robots de revisión de código que sugieren algoritmos alternativos con compensaciones de Big-O están cambiando la forma en que asesoramos a los jóvenes.",
+        "ar": "تعمل روبوتات مراجعة التعليمات البرمجية التي تقترح خوارزميات بديلة مع مقايضات Big-O على تغيير طريقة توجيهنا للصغار.",
+        "zh": "代码审查机器人建议具有 Big-O 权衡的替代算法，正在改变我们指导初级员工的方式。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_021",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Shipped a CLI tool where half the boilerplate came from an AI scaffold. I focused on the domain logic instead.",
+        "es": "Se envió una herramienta CLI donde la mitad del texto estándar provino de un andamio de IA. En cambio, me concentré en la lógica del dominio.",
+        "ar": "تم شحن أداة CLI حيث جاء نصف النموذج المعياري من سقالة الذكاء الاصطناعي. ركزت على منطق المجال بدلا من ذلك.",
+        "zh": "发布了一个 CLI 工具，其中一半的样板来自 AI 支架。相反，我专注于领域逻辑。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_022",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Multimodal coding assistants that read screenshots of UI bugs and propose CSS fixes are underrated right now.",
+        "es": "Los asistentes de codificación multimodal que leen capturas de pantalla de errores de la interfaz de usuario y proponen correcciones de CSS están subestimados en este momento.",
+        "ar": "إن مساعدي الترميز متعدد الوسائط الذين يقرأون لقطات شاشة لأخطاء واجهة المستخدم ويقترحون إصلاحات CSS يتم الاستهانة بهم في الوقت الحالي.",
+        "zh": "读取 UI 错误屏幕截图并提出 CSS 修复建议的多模式编码助手目前被低估了。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_023",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "We fine-tuned a small model on our internal style guide. Diff noise in AI suggestions dropped overnight.",
+        "es": "Ajustamos un modelo pequeño en nuestra guía de estilo interna. El ruido diferencial en las sugerencias de IA disminuyó durante la noche.",
+        "ar": "لقد قمنا بضبط نموذج صغير في دليل النمط الداخلي الخاص بنا. انخفض ضجيج الاختلاف في اقتراحات الذكاء الاصطناعي بين عشية وضحاها.",
+        "zh": "我们在内部风格指南上微调了一个小模型。人工智能建议中的差异噪音一夜之间就下降了。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_024",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "AI filled in the GraphQL resolvers from our schema comments. Not perfect, but a fantastic starting point.",
+        "es": "La IA completó los solucionadores GraphQL a partir de nuestros comentarios de esquema. No es perfecto, pero es un punto de partida fantástico.",
+        "ar": "قام الذكاء الاصطناعي بملء وحدات حل GraphQL من تعليقات المخطط الخاص بنا. ليست مثالية، ولكنها نقطة انطلاق رائعة.",
+        "zh": "AI 从我们的模式注释中填充了 GraphQL 解析器。并不完美，但却是一个很棒的起点。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_025",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "The future of coding is collaborative: human judgment plus AI speed. Today felt like that future arrived.",
+        "es": "El futuro de la codificación es colaborativo: juicio humano más velocidad de la IA. Hoy sentí que ese futuro llegó.",
+        "ar": "مستقبل البرمجة تعاوني: الحكم البشري بالإضافة إلى سرعة الذكاء الاصطناعي. شعرت اليوم أن هذا المستقبل قد وصل.",
+        "zh": "编码的未来是协作的：人类判断加上人工智能速度。今天感觉未来已经到来。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_026",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Translated a 10k-line Java module to Go with AI help. Manual review took longer than generation — as it should.",
+        "es": "Se tradujo un módulo Java de 10k líneas para Go con ayuda de IA. La revisión manual llevó más tiempo que la generación, como debería ser.",
+        "ar": "تمت ترجمة وحدة Java المكونة من 10 آلاف سطر إلى Go بمساعدة الذكاء الاصطناعي. استغرقت المراجعة اليدوية وقتًا أطول من التوليد، كما ينبغي.",
+        "zh": "在 AI 帮助下将 10k 行 Java 模块翻译为 Go。手动审核花费的时间比生成时间更长——这是理所应当的。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_027",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "An AI suggested memoizing a hot path I had never profiled. Benchmarks confirmed a 3× win. Humble pie.",
+        "es": "Una IA sugirió memorizar un camino caliente que nunca había perfilado. Los puntos de referencia confirmaron una victoria por 3×. Pastel humilde.",
+        "ar": "اقترح الذكاء الاصطناعي حفظ مسار ساخن لم يسبق لي أن قمت بتحديده. أكدت المعايير الفوز 3 ×. فطيرة متواضعة.",
+        "zh": "人工智能建议记住一条我从未描述过的热门路径。基准测试证实了 3 倍的胜利。谦虚的馅饼。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_028",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Pairing with an AI on LeetCode-style interview prep is weirdly effective. It forces you to verbalize tradeoffs.",
+        "es": "Combinarlo con una IA en la preparación de entrevistas al estilo LeetCode es extrañamente efectivo. Te obliga a verbalizar las compensaciones.",
+        "ar": "يعد الاقتران مع الذكاء الاصطناعي في الإعداد للمقابلة بأسلوب LeetCode فعالاً بشكل غريب. إنه يجبرك على التعبير عن المقايضات اللفظية.",
+        "zh": "与人工智能配对进行 LeetCode 式的面试准备非常有效。它迫使你用语言表达权衡。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_029",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Our design system now has an AI that proposes accessible ARIA attributes when you paste a component.",
+        "es": "Nuestro sistema de diseño ahora tiene una IA que propone atributos ARIA accesibles cuando pegas un componente.",
+        "ar": "يتمتع نظام التصميم الخاص بنا الآن بذكاء اصطناعي يقترح سمات ARIA يمكن الوصول إليها عند لصق أحد المكونات.",
+        "zh": "我们的设计系统现在有一个人工智能，当您粘贴组件时，它会建议可访问的 ARIA 属性。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_030",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Generated a fuzzing harness with an LLM and it found a buffer edge case within an hour. Security loves this.",
+        "es": "Generé un arnés de fuzzing con un LLM y encontré un caso de borde de amortiguación en una hora. A la seguridad le encanta esto.",
+        "ar": "تم إنشاء أداة تشويش باستخدام LLM وتم العثور على حالة حافة عازلة في غضون ساعة. الأمن معجب بهذا.",
+        "zh": "与法学硕士一起生成了一个模糊测试工具，并在一小时内发现了缓冲区边缘情况。保安喜欢这个。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_031",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "I'm less afraid of blank files now. AI drafts give me something to react to instead of staring at the void.",
+        "es": "Ahora tengo menos miedo a los archivos en blanco. Los borradores de IA me dan algo a lo que reaccionar en lugar de mirar al vacío.",
+        "ar": "أنا أقل خوفًا من الملفات الفارغة الآن. تمنحني مسودات الذكاء الاصطناعي شيئًا لأتفاعل معه بدلاً من التحديق في الفراغ.",
+        "zh": "我现在不再害怕空白文件了。人工智能草稿给了我一些可以做出反应的东西，而不是盯着虚空。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_032",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Real-time collaborative coding with an AI observer that flags security smells mid-session. Instant feedback loop.",
+        "es": "Codificación colaborativa en tiempo real con un observador de IA que detecta problemas de seguridad a mitad de sesión. Bucle de retroalimentación instantánea.",
+        "ar": "البرمجة التعاونية في الوقت الفعلي مع مراقب الذكاء الاصطناعي الذي يشير إلى الأمان تنبعث منه رائحة منتصف الجلسة. حلقة ردود الفعل الفورية.",
+        "zh": "与人工智能观察者进行实时协作编码，在会话中标记安全气味。即时反馈循环。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_033",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Asked the model to rewrite our Makefile for clarity. Developers stopped pinging me about build targets.",
+        "es": "Le pedimos al modelo que reescribiera nuestro Makefile para mayor claridad. Los desarrolladores dejaron de enviarme mensajes sobre objetivos de compilación.",
+        "ar": "طلب من النموذج إعادة كتابة ملف Makefile الخاص بنا من أجل الوضوح. توقف المطورون عن الاتصال بي بشأن أهداف البناء.",
+        "zh": "为了清晰起见，要求模型重写我们的 Makefile。开发人员不再向我询问构建目标。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_034",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "AI-assisted git bisect summaries are saving hours when hunting regressions across long commit histories.",
+        "es": "Los resúmenes de git bisect asistidos por IA ahorran horas al buscar regresiones en largos historiales de confirmaciones.",
+        "ar": "توفر ملخصات git bisect بمساعدة الذكاء الاصطناعي ساعات عند البحث عن الانحدارات عبر تواريخ الالتزام الطويلة.",
+        "zh": "在寻找长期提交历史记录中的回归时，人工智能辅助的 git bisect 摘要可以节省时间。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_035",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "The coding agent booked a calendar hold, opened a draft PR, and left a checklist. I just approved the plan.",
+        "es": "El agente codificador reservó una retención en el calendario, abrió un borrador de PR y dejó una lista de verificación. Acabo de aprobar el plan.",
+        "ar": "قام وكيل الترميز بحجز حجز في التقويم، وفتح مسودة للعلاقات العامة، وترك قائمة مرجعية. لقد وافقت للتو على الخطة.",
+        "zh": "编码代理预订了日历保留，打开了 PR 草稿，并留下了清单。我刚刚批准了这个计划。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_036",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Using AI to convert Figma annotations into typed props for our design components. Design-dev handoff improved.",
+        "es": "Uso de IA para convertir anotaciones de Figma en accesorios escritos para nuestros componentes de diseño. Se mejoró la transferencia de diseño a desarrollo.",
+        "ar": "استخدام الذكاء الاصطناعي لتحويل تعليقات Figma التوضيحية إلى دعائم مكتوبة لمكونات التصميم لدينا. تم تحسين تسليم التصميم والتطوير.",
+        "zh": "使用 AI 将 Figma 注释转换为我们设计组件的类型化道具。改进了设计与开发的交接。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_037",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "I still write critical path crypto by hand. Everything else? Happy to let the assistant draft and me verify.",
+        "es": "Todavía escribo criptografía de ruta crítica a mano. ¿Todo lo demás? Feliz de dejar que el asistente redacte y yo verifiquemos.",
+        "ar": "ما زلت أكتب تشفير المسار الحرج يدويًا. كل شيء آخر؟ يسعدني السماح للمساعد بصياغة المشروع ولي بالتحقق.",
+        "zh": "我仍然手工编写关键路径加密。其他一切？很高兴让助理起草和我核实。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_038",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Benchmarking three AI coding tools on the same bugfix. Clear winner on multi-file reasoning this week.",
+        "es": "Evaluación comparativa de tres herramientas de codificación de IA en la misma corrección de errores. Claro ganador en razonamiento de múltiples archivos esta semana.",
+        "ar": "قياس الأداء لثلاث أدوات ترميز للذكاء الاصطناعي على نفس الخطأ. فائز واضح في الاستدلال متعدد الملفات هذا الأسبوع.",
+        "zh": "在同一错误修复上对三种人工智能编码工具进行基准测试。本周多文件推理中明显获胜。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_039",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Natural language queries over our codebase ('where do we validate JWTs?') beat tribal knowledge every time.",
+        "es": "Las consultas en lenguaje natural sobre nuestro código base ('¿dónde validamos los JWT?') siempre superan al conocimiento tribal.",
+        "ar": "استعلامات اللغة الطبيعية عبر قاعدة التعليمات البرمجية الخاصة بنا (\"أين يمكننا التحقق من صحة JWTs؟\") تتفوق على المعرفة القبلية في كل مرة.",
+        "zh": "对我们代码库的自然语言查询（“我们在哪里验证 JWT？”）每次都击败了部落知识。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_040",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "An AI suggested deleting 400 lines of dead feature-flag code. Ship it. Less code is a gift.",
+        "es": "Una IA sugirió eliminar 400 líneas de código de indicador de función inactivo. Envíalo. Menos código es un regalo.",
+        "ar": "اقترح الذكاء الاصطناعي حذف 400 سطر من رمز علامة الميزة الميتة. شحنها. رمز أقل هو هدية.",
+        "zh": "AI 建议删除 400 行无用的功能标记代码。运送它。更少的代码是一份礼物。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_041",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Teaching the intern: use AI for boilerplate, use your brain for invariants. That rule is sticking.",
+        "es": "Enseñar al pasante: use IA para texto estándar, use su cerebro para invariantes. Esa regla se mantiene.",
+        "ar": "تعليم المتدرب: استخدم الذكاء الاصطناعي للنموذج المعياري، واستخدم عقلك للثوابت. هذه القاعدة ثابتة.",
+        "zh": "教导实习生：使用人工智能作为样板，使用你的大脑来处理不变量。这条规则仍然存在。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_042",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Our incident bot now proposes rollback commands from stack traces. Mean time to mitigate is down again.",
+        "es": "Nuestro robot de incidentes ahora propone comandos de reversión de los seguimientos de la pila. El tiempo medio para mitigar ha vuelto a bajar.",
+        "ar": "يقترح روبوت الحادث لدينا الآن أوامر التراجع من تتبعات المكدس. متوسط ​​الوقت اللازم للتخفيف انخفض مرة أخرى.",
+        "zh": "我们的事件机器人现在建议从堆栈跟踪中回滚命令。平均缓解时间再次缩短。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_043",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Generated end-to-end Playwright tests from a user story. Flaky in places, but the skeleton was solid.",
+        "es": "Pruebas de Playwright generadas de un extremo a otro a partir de una historia de usuario. Escamoso en algunos lugares, pero el esqueleto era sólido.",
+        "ar": "تم إنشاء اختبارات الكاتب المسرحي الشاملة من قصة المستخدم. قشاري في بعض الأماكن، ولكن الهيكل العظمي كان صلبا.",
+        "zh": "从用户故事生成端到端的剧作家测试。有些地方很脆弱，但骨架很坚固。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_044",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "I love that coding AIs can explain unfamiliar DSLs. Picked up a new build system without a week of docs.",
+        "es": "Me encanta que la codificación de IA pueda explicar DSL desconocidos. Adquirí un nuevo sistema de compilación sin una semana de documentos.",
+        "ar": "أحب أن الذكاء الاصطناعي للتشفير يمكنه تفسير خطوط DSL غير المألوفة. التقطت نظام بناء جديدًا بدون أسبوع من المستندات.",
+        "zh": "我喜欢人工智能编码可以解释不熟悉的 DSL。没有一周的文档就拿起了一个新的构建系统。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_045",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "AI-written commit messages that reference the ticket and summarize intent — finally consistent history.",
+        "es": "Mensajes de confirmación escritos por IA que hacen referencia al ticket y resumen la intención: por fin un historial coherente.",
+        "ar": "رسائل التزام مكتوبة بواسطة الذكاء الاصطناعي تشير إلى التذكرة وتلخص النية - أخيرًا سجل متسق.",
+        "zh": "人工智能编写的提交消息引用了票证并总结了意图——最终一致的历史记录。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_046",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Tried agentic coding for a weekend side project. It handled scaffolding; I handled taste and product decisions.",
+        "es": "Probé la codificación agente para un proyecto paralelo de fin de semana. Manejó andamios; Manejé las decisiones de sabor y producto.",
+        "ar": "تمت تجربة الترميز الوكيل لمشروع جانبي في عطلة نهاية الأسبوع. تعاملت مع السقالات. لقد تعاملت مع قرارات الذوق والمنتج.",
+        "zh": "尝试了周末业余项目的代理编码。它处理脚手架；我负责口味和产品决策。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_047",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Static analysis plus LLM explanations means juniors understand *why* a rule exists, not just that it failed.",
+        "es": "El análisis estático más las explicaciones del LLM significan que los jóvenes entienden *por qué* existe una regla, no solo que falló.",
+        "ar": "التحليل الثابت بالإضافة إلى تفسيرات LLM يعني أن المبتدئين يفهمون *سبب* وجود القاعدة، وليس فقط أنها فشلت.",
+        "zh": "静态分析加上法学硕士解释意味着初级人员了解“为什么”规则存在，而不仅仅是它失败了。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_048",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Ported our logging format across five services with an AI batch edit. Consistency without the tedious grind.",
+        "es": "Portamos nuestro formato de registro a cinco servicios con una edición por lotes de IA. Consistencia sin la tediosa rutina.",
+        "ar": "نقل تنسيق التسجيل الخاص بنا عبر خمس خدمات من خلال تحرير دفعة من الذكاء الاصطناعي. الاتساق دون طحن مملة.",
+        "zh": "通过 AI 批量编辑将我们的日志格式移植到五个服务中。一致性，无需繁琐的打磨。"
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_049",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "The best demo I saw this month: describe a bug in Slack, get a candidate patch in the thread. Closing the loop.",
+        "es": "La mejor demostración que vi este mes: describe un error en Slack, obtén un parche candidato en el hilo. Cerrando el círculo.",
+        "ar": "أفضل عرض توضيحي رأيته هذا الشهر: وصف خطأ في Slack، والحصول على تصحيح مرشح في سلسلة الرسائل. إغلاق الحلقة.",
+        "zh": "本月我看到的最好的演示：描述 Slack 中的错误，在线程中获取候选补丁。 Closing the loop."
+      }
+    },
+    {
+      "post_id": "ai_coding_innovations_050",
+      "topic": "ai_coding_innovations",
+      "topic_label": "AI innovations in coding",
+      "texts": {
+        "en": "Cautious optimism: AI coding tools amplify careful engineers. They also amplify messy habits. Discipline still wins.",
+        "es": "Optimismo cauteloso: las herramientas de codificación de IA amplifican a los ingenieros cuidadosos. También amplifican los hábitos desordenados. La disciplina todavía gana.",
+        "ar": "تفاؤل حذر: أدوات تشفير الذكاء الاصطناعي تزيد من حرص المهندسين كما أنها تضخم العادات الفوضوية. الانضباط لا يزال يفوز.",
+        "zh": "谨慎乐观：人工智能编码工具增强了细心的工程师的能力。它们还会加剧杂乱的习惯。纪律仍然获胜。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_001",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Artists spent years developing a style. AI scraped it overnight without consent or credit. That's not innovation — that's theft.",
+        "es": "Los artistas pasaron años desarrollando un estilo. La IA lo raspó de la noche a la mañana sin consentimiento ni crédito. Eso no es innovación: es robo.",
+        "ar": "أمضى الفنانون سنوات في تطوير أسلوبهم. كشطها الذكاء الاصطناعي بين عشية وضحاها دون موافقة أو نسب الفضل إليهم. هذا ليس ابتكارًا — بل سرقة.",
+        "zh": "艺术家们花费数年时间形成自己的风格。人工智能在一夜之间抓取了这些作品，既未经同意也未署名。这不是创新——这是盗窃。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_002",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "My novel is in training corpora and I never opted in. Publishers need to fight this harder.",
+        "es": "Mi novela está en corpus de formación y nunca opté por participar. Los editores deben luchar más duro contra esto.",
+        "ar": "روايتي قيد التدريب ولم أشترك مطلقًا. يحتاج الناشرون إلى محاربة هذا الأمر بقوة أكبر.",
+        "zh": "我的小说正在训练语料库中，但我从未选择加入。出版商需要更加努力地应对这一问题。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_003",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Stock photo sites are flooded with AI clones of living illustrators. Clients can't tell; creators get unpaid.",
+        "es": "Los sitios de fotografías de archivo están inundados de clones de ilustradores vivos con IA. Los clientes no pueden decirlo; los creadores no reciben pago.",
+        "ar": "تمتلئ مواقع الصور المخزنة بنسخ الذكاء الاصطناعي للرسامين الأحياء. لا يستطيع العملاء معرفة ذلك؛ المبدعين يحصلون على أجر.",
+        "zh": "库存照片网站充斥着活着的插画家的人工智能克隆。客户无法辨别；创作者得不到报酬。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_004",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "If a model can pastiche my brushwork, it learned from my portfolio. Pay us or don't train on us.",
+        "es": "Si un modelo puede imitar mis pinceladas, aprendió de mi portafolio. Páganos o no entrene con nosotros.",
+        "ar": "إذا كان بإمكان النموذج أن ينسخ أعمالي بالفرشاة، فقد تعلم من محفظتي. ادفع لنا أو لا تدرب علينا.",
+        "zh": "如果一个模型可以模仿我的笔触，它是从我的作品集中学习的。付钱给我们，否则就不给我们训练。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_005",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Copyright offices are scrambling. Meanwhile generators keep shipping 'in the style of' prompts as a feature.",
+        "es": "Las oficinas de derechos de autor están luchando. Mientras tanto, los generadores siguen enviando mensajes \"al estilo de\" como característica.",
+        "ar": "مكاتب حقوق الطبع والنشر تتدافع. وفي الوقت نفسه، تحافظ المولدات على الشحن \"بأسلوب\" المطالبات كميزة.",
+        "zh": "版权局正忙得不可开交。与此同时，生成器继续以“提示风格”作为一项功能。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_006",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Writers: check if your books appear in shadow libraries used for training. Mine did. Furious doesn't cover it.",
+        "es": "Escritores: compruebe si sus libros aparecen en bibliotecas paralelas utilizadas para la formación. El mío lo hizo. Furioso no lo cubre.",
+        "ar": "الكتاب: تحقق مما إذا كانت كتبك تظهر في مكتبات الظل المستخدمة للتدريب. فعلت الألغام. غاضب لا يغطيها.",
+        "zh": "作家：检查您的书籍是否出现在用于培训的影子图书馆中。我的就是这样。愤怒并不能掩盖它。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_007",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Commissioning an illustrator used to mean supporting a human. Now brands prompt and call it 'efficiency'.",
+        "es": "Encargar a un ilustrador solía significar apoyar a un ser humano. Ahora las marcas incitan y lo llaman \"eficiencia\".",
+        "ar": "كان تكليف الرسام يعني دعم الإنسان. الآن تطالب العلامات التجارية وتسميها \"الكفاءة\".",
+        "zh": "过去委托插画家意味着支持人类。现在品牌提示并称其为“效率”。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_008",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "AI music that mimics a living artist's voice without a license should be illegal, full stop.",
+        "es": "La música con IA que imita la voz de un artista vivo sin licencia debería ser ilegal, punto.",
+        "ar": "يجب أن تكون موسيقى الذكاء الاصطناعي التي تحاكي صوت فنان حي دون ترخيص غير قانونية.",
+        "zh": "未经许可模仿在世艺术家声音的人工智能音乐应该是非法的，句号。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_009",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "I watermarked my art. Scrapers still vacuumed it. Watermarks aren't consent.",
+        "es": "Puse una marca de agua en mi arte. Los raspadores todavía lo aspiraban. Las marcas de agua no son consentimiento.",
+        "ar": "لقد وضعت علامة مائية على أعمالي الفنية. لا تزال الكاشطات تقوم بتنظيفه بالمكنسة الكهربائية. العلامات المائية ليست موافقة.",
+        "zh": "我给我的作品加了水印。刮刀仍然用吸尘器清理它。水印不代表同意。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_010",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Studios train on fan art and indie comics, then compete with the same communities. Predatory loop.",
+        "es": "Los estudios se entrenan en fan art y cómics independientes y luego compiten con las mismas comunidades. Bucle depredador.",
+        "ar": "تتدرب الاستوديوهات على فن المعجبين والقصص المصورة المستقلة، ثم تتنافس مع نفس المجتمعات. حلقة مفترسة.",
+        "zh": "工作室对粉丝艺术和独立漫画进行培训，然后与相同的社区竞争。掠夺性循环。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_011",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Fair use was never meant to cover industrial-scale ingestion of entire libraries. Courts need to say so.",
+        "es": "El uso legítimo nunca tuvo como objetivo cubrir la ingestión a escala industrial de bibliotecas enteras. Los tribunales deben decirlo.",
+        "ar": "لم يكن المقصود من الاستخدام العادل أبدًا تغطية استيعاب مكتبات بأكملها على نطاق صناعي. المحاكم بحاجة إلى أن تقول ذلك.",
+        "zh": "合理使用绝不意味着涵盖整个图书馆的工业规模摄取。法院需要这么说。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_012",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "My agent found AI summaries of my articles sold as 'original research'. Attribution is broken online.",
+        "es": "Mi agente encontró resúmenes de IA de mis artículos vendidos como \"investigación original\". La atribución no funciona en línea.",
+        "ar": "وجد وكيل أعمالي ملخصات الذكاء الاصطناعي لمقالاتي تُباع على أنها \"بحث أصلي\". الإسناد معطل على الإنترنت.",
+        "zh": "我的经纪人发现我的文章的人工智能摘要作为“原创研究”出售。网上归因已被破坏。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_013",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Photographers losing stock licenses to synthetic lookalikes. The market is being hollowed out.",
+        "es": "Fotógrafos que pierden licencias de acciones ante imitadores sintéticos. El mercado se está vaciando.",
+        "ar": "يفقد المصورون تراخيص المخزون بسبب المشابهين الاصطناعيين. يتم تجويف السوق.",
+        "zh": "摄影师的库存许可被合成的相似者所取代。市场正在被掏空。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_014",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Opt-out registries are a joke when models already trained. We need opt-in and compensation, not paperwork theater.",
+        "es": "Los registros de exclusión voluntaria son una broma cuando los modelos ya están capacitados. Necesitamos aceptación y compensación, no teatro de papeleo.",
+        "ar": "تعتبر سجلات إلغاء الاشتراك مزحة عندما تكون النماذج قد تم تدريبها بالفعل. نحن بحاجة إلى الاشتراك والتعويض، وليس مسرح الأعمال الورقية.",
+        "zh": "当模型已经训练完毕时，选择退出注册表就是一个笑话。我们需要选择加入和补偿，而不是文书剧场。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_015",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Calling it 'inspiration' when the model regurgitates a signature character design is gaslighting creators.",
+        "es": "Llamarlo \"inspiración\" cuando el modelo regurgita un diseño de personaje característico es engañar a los creadores.",
+        "ar": "إن وصفه بأنه \"إلهام\" عندما يكرر النموذج تصميم شخصية مميز هو منشئو الإضاءة.",
+        "zh": "当模型反刍出标志性的角色设计时，称其为“灵感”，这就是在给创作者加油。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_016",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Game concept artists report briefs that literally say 'make it like this AI mashup of our unpaid references'.",
+        "es": "Los artistas conceptuales del juego informan resúmenes que literalmente dicen \"hazlo como esta combinación de IA de nuestras referencias no remuneradas\".",
+        "ar": "يقدم فنانو مفهوم اللعبة ملخصات تقول حرفيًا \"اجعلها مثل هذا المزيج من الذكاء الاصطناعي لمراجعنا غير المدفوعة\".",
+        "zh": "游戏概念艺术家报告的简报字面意思是“让它像我们无偿参考的人工智能混搭一样”。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_017",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Authors Guild lawsuits matter. Individual freelancers can't litigate against trillion-parameter scrapers alone.",
+        "es": "Las demandas del gremio de autores son importantes. Los autónomos no pueden litigar solos contra raspadores de billones de parámetros.",
+        "ar": "الدعاوى القضائية لنقابة المؤلفين مهمة. لا يمكن للأفراد العاملين لحسابهم الخاص رفع دعوى قضائية ضد كاشطات تريليون معلمة وحدها.",
+        "zh": "作家协会诉讼很重要。个人自由职业者无法单独对万亿参数的抓取者提起诉讼。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_018",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "I spent a decade building an audience. Generators freeride on that recognition without hiring me once.",
+        "es": "Pasé una década construyendo una audiencia. Los generadores aprovechan ese reconocimiento sin contratarme ni una sola vez.",
+        "ar": "لقد أمضيت عقدًا من الزمن في بناء جمهور. المولدات تستفيد بشكل مجاني من هذا الاعتراف دون تعييني مرة واحدة.",
+        "zh": "我花了十年的时间来培养观众。发电机们搭上了这种认可的便车，没有雇用我一次。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_019",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Translate 'style transfer' into honest language: unauthorized derivative works at planetary scale.",
+        "es": "Traducir 'transferencia de estilo' a un lenguaje honesto: obras derivadas no autorizadas a escala planetaria.",
+        "ar": "ترجمة \"نقل الأسلوب\" إلى لغة صادقة: أعمال مشتقة غير مصرح بها على نطاق كوكبي.",
+        "zh": "将“风格转移”翻译成诚实的语言：全球范围内未经授权的衍生作品。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_020",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Museums digitizing collections then licensing them to AI firms — did the original artists agree?",
+        "es": "Los museos digitalizan sus colecciones y luego las conceden bajo licencia a empresas de inteligencia artificial: ¿estuvieron de acuerdo los artistas originales?",
+        "ar": "تقوم المتاحف برقمنة مجموعاتها ثم ترخيصها لشركات الذكاء الاصطناعي، هل وافق الفنانون الأصليون على ذلك؟",
+        "zh": "博物馆将藏品数字化，然后将其授权给人工智能公司——原始艺术家同意吗？"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_021",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Voice actors clone-scammed by AI reads of their demos. Consent forms should be mandatory before synthesis.",
+        "es": "Actores de doblaje clonados y estafados por lecturas de inteligencia artificial de sus demostraciones. Los formularios de consentimiento deberían ser obligatorios antes de la síntesis.",
+        "ar": "يقرأ الممثلون الصوتيون الذين تم استنساخهم بواسطة الذكاء الاصطناعي عروضهم التوضيحية. يجب أن تكون نماذج الموافقة إلزامية قبل التوليف.",
+        "zh": "被人工智能克隆的配音演员会读取他们的演示。合成前应强制填写同意书。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_022",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Fanfic writers joked about copyright; now corporate AIs treat all fiction as free fuel. Irony is bitter.",
+        "es": "Los escritores de fanfic bromeaban sobre los derechos de autor; ahora las IA corporativas tratan toda la ficción como combustible gratuito. La ironía es amarga.",
+        "ar": "مازح كتاب Fanfic حول حقوق الطبع والنشر. والآن تتعامل أنظمة الذكاء الاصطناعي في الشركات مع كل الخيال باعتباره وقودًا مجانيًا. المفارقة مريرة.",
+        "zh": "同人小说作家拿版权开玩笑；现在，企业人工智能将所有小说视为免费燃料。讽刺是苦涩的。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_023",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Design agencies pitching 'AI-accelerated' decks built on stolen moodboards. Clients deserve transparency.",
+        "es": "Agencias de diseño lanzan decks 'acelerados por IA' construidos a partir de moodboards robados. Los clientes merecen transparencia.",
+        "ar": "تقدم وكالات التصميم تشكيلات \"متسارعة بالذكاء الاصطناعي\" مبنية على لوحات مزاجية مسروقة. العملاء يستحقون الشفافية.",
+        "zh": "设计机构推销基于被盗情绪板构建的“人工智能加速”套牌。客户应该享有透明度。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_024",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "If training data is the new oil, then unpaid creators are the unpaid oilfield workers. That has to change.",
+        "es": "Si los datos de capacitación son el nuevo petróleo, entonces los creadores no remunerados son los trabajadores no remunerados de los yacimientos petrolíferos. Eso tiene que cambiar.",
+        "ar": "إذا كانت بيانات التدريب هي النفط الجديد، فإن المبدعين غير مدفوعي الأجر هم عمال حقول النفط غير مدفوعي الأجر. هذا يجب أن يتغير.",
+        "zh": "如果训练数据是新石油，那么无薪创造者就是无薪油田工人。这必须改变。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_025",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "My comic panels showed up in a dataset dump. No license, no email, no revenue share. Just extraction.",
+        "es": "Mis paneles de cómics aparecieron en un volcado de datos. Sin licencia, sin correo electrónico, sin reparto de ingresos. Sólo extracción.",
+        "ar": "ظهرت لوحاتي المصورة في تفريغ مجموعة البيانات. لا يوجد ترخيص ولا بريد إلكتروني ولا مشاركة في الإيرادات. مجرد استخراج.",
+        "zh": "我的漫画面板出现在数据集转储中。没有许可证，没有电子邮件，没有收入分成。只是提取。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_026",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Synthetic 'authors' flooding ebook stores with AI sludge. Discoverability for real writers collapses.",
+        "es": "\"Autores\" sintéticos inundan las tiendas de libros electrónicos con lodo de IA. La capacidad de descubrimiento para los escritores reales colapsa.",
+        "ar": "\"المؤلفون\" الاصطناعيون يغمرون متاجر الكتب الإلكترونية بحمأة الذكاء الاصطناعي تنهار إمكانية الاكتشاف بالنسبة للكتاب الحقيقيين.",
+        "zh": "合成“作者”用人工智能污泥淹没了电子书商店。真正作家的可发现性崩溃了。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_027",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Fashion designers seeing AI knockoffs of unreleased sketches after studio leaks. IP law is lagging hard.",
+        "es": "Los diseñadores de moda ven imitaciones de IA de bocetos inéditos después de filtraciones de estudio. La ley de propiedad intelectual está muy retrasada.",
+        "ar": "مصممو الأزياء يرون نسخًا مقلدة من الرسومات التي لم يتم إصدارها بعد تسريبات في الاستوديو. قانون الملكية الفكرية يتخلف بشدة.",
+        "zh": "工作室泄密后，时装设计师看到了未发布草图的人工智能仿制品。知识产权法严重滞后。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_028",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Open-source models trained on pirated books aren't 'open' — they're laundering copyrighted text.",
+        "es": "Los modelos de código abierto entrenados en libros pirateados no son \"abiertos\": están blanqueando textos protegidos por derechos de autor.",
+        "ar": "النماذج مفتوحة المصدر المدربة على الكتب المقرصنة ليست \"مفتوحة\" - فهي تقوم بغسل النصوص المحمية بحقوق الطبع والنشر.",
+        "zh": "在盗版书籍上训练的开源模型并不是“开放的”——它们是在洗钱受版权保护的文本。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_029",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "I support AI tools that license datasets fairly. I oppose tools that treat culture as an all-you-can-eat buffet.",
+        "es": "Apoyo las herramientas de inteligencia artificial que otorgan licencias justas a conjuntos de datos. Me opongo a las herramientas que tratan la cultura como un buffet de todo lo que puedas comer.",
+        "ar": "أنا أدعم أدوات الذكاء الاصطناعي التي ترخص مجموعات البيانات بشكل عادل. أنا أعارض الأدوات التي تتعامل مع الثقافة باعتبارها بوفيه مفتوح يشمل كل ما يمكنك تناوله.",
+        "zh": "我支持公平许可数据集的人工智能工具。我反对将文化视为自助餐的工具。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_030",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Prompt markets selling 'exact artist style' packs should be sued into oblivion.",
+        "es": "Los mercados rápidos que venden paquetes de 'estilo de artista exacto' deberían ser demandados hasta el olvido.",
+        "ar": "يجب مقاضاة الأسواق السريعة التي تبيع حزم \"أسلوب الفنان الدقيق\" في غياهب النسيان.",
+        "zh": "销售“精确艺术家风格”包的即时市场应该被起诉并被遗忘。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_031",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Journalists finding their paywalled reporting inside chatbot answers with zero outbound links. Theft with a UI.",
+        "es": "Los periodistas que encuentran sus informes de pago dentro del chatbot responden sin enlaces salientes. Robo con una UI.",
+        "ar": "يعثر الصحفيون على تقاريرهم المحمية بنظام حظر الاشتراك غير المدفوع داخل إجابات برامج الدردشة بدون أي روابط خارجية. السرقة باستخدام واجهة المستخدم.",
+        "zh": "记者发现聊天机器人内的付费报道的出站链接为零。通过 UI 进行盗窃。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_032",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Children's book illustrators undercut by same-day AI picture books. Quality aside, the labor theft is real.",
+        "es": "Los ilustradores de libros infantiles son menoscabados por los libros ilustrados de IA del mismo día. Dejando a un lado la calidad, el robo de mano de obra es real.",
+        "ar": "رسامو كتب الأطفال يقتطعون من كتب مصورة تعمل بالذكاء الاصطناعي في نفس اليوم. وبغض النظر عن الجودة، فإن سرقة العمالة حقيقية.",
+        "zh": "当日人工智能图画书削弱了儿童图书插画师的地位。撇开质量不谈，劳动力盗窃是真实存在的。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_033",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Collective licensing could work — if platforms admit they need it instead of hiding behind 'publicly available'.",
+        "es": "Las licencias colectivas podrían funcionar, si las plataformas admiten que las necesitan en lugar de esconderse detrás de \"disponibles públicamente\".",
+        "ar": "يمكن للترخيص الجماعي أن ينجح، إذا اعترفت المنصات بحاجتها إليه بدلًا من الاختباء وراء عبارة \"متاحة للعامة\".",
+        "zh": "集体许可可能会起作用——如果平台承认他们需要它而不是隐藏在“公开可用”背后。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_034",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "My Patreon exclusives were scraped from a leak. Generators don't care about paywalls or trust.",
+        "es": "Mis exclusivas de Patreon fueron eliminadas de una filtración. A los generadores no les importan los muros de pago ni la confianza.",
+        "ar": "تم حذف مقتنياتي الحصرية على Patreon من تسرب. لا يهتم المولدون بنظام حظر الاشتراك غير المدفوع أو الثقة.",
+        "zh": "我的 Patreon 独家内容因泄露而被删除。生成器不关心付费墙或信任。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_035",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Calling artists Luddites for wanting payment is a tactic. We use tools; we refuse unpaid appropriation.",
+        "es": "Llamar luditas a los artistas por querer recibir un pago es una táctica. Usamos herramientas; rechazamos la apropiación impaga.",
+        "ar": "يعد استدعاء الفنانين Luddites لرغبتهم في الدفع بمثابة تكتيك. نحن نستخدم الأدوات؛ نحن نرفض الاعتمادات غير المدفوعة.",
+        "zh": "称艺术家索要报酬是勒德分子是一种策略。我们使用工具；我们拒绝未付的拨款。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_036",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Film concept art leaks into training sets before the movie releases. Spoilers and IP theft in one package.",
+        "es": "El arte conceptual de la película se filtra en los sets de entrenamiento antes del estreno de la película. Spoilers y robo de propiedad intelectual en un solo paquete.",
+        "ar": "يتسرب فن مفهوم الفيلم إلى مجموعات التدريب قبل إصدار الفيلم. المفسدين وسرقة الملكية الفكرية في حزمة واحدة.",
+        "zh": "电影概念艺术在电影上映前渗入训练集。剧透和知识产权盗窃合二为一。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_037",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Academic publishers quietly selling corpora to AI companies while authors see none of the upside.",
+        "es": "Los editores académicos venden silenciosamente corpus a empresas de inteligencia artificial, mientras que los autores no ven nada positivo.",
+        "ar": "يقوم الناشرون الأكاديميون ببيع مجموعات بحثية بهدوء إلى شركات الذكاء الاصطناعي، في حين لا يرى المؤلفون أي جانب إيجابي.",
+        "zh": "学术出版商悄悄地将语料库出售给人工智能公司，而作者却看不到任何好处。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_038",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "I can spot my linework in 'original' NFT drops. Blockchain doesn't clean dirty training data.",
+        "es": "Puedo detectar mis líneas en lanzamientos de NFT \"originales\". Blockchain no limpia los datos de entrenamiento sucios.",
+        "ar": "يمكنني اكتشاف خط العمل الخاص بي في قطرات NFT \"الأصلية\". لا تقوم Blockchain بتنظيف بيانات التدريب القذرة.",
+        "zh": "我可以在“原始”NFT 滴中发现我的线条。区块链不会清理肮脏的训练数据。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_039",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Songwriters: your melodies are being statistically averaged into royalty-free sludge. Fight for mechanicals.",
+        "es": "Compositores: sus melodías se promedian estadísticamente y se convierten en un lodo libre de regalías. Lucha por la mecánica.",
+        "ar": "مؤلفو الأغاني: يتم حساب متوسط ​​ألحانك إحصائيًا وتحويلها إلى حمأة خالية من حقوق الملكية. الكفاح من أجل الميكانيكا.",
+        "zh": "歌曲作者：你的旋律被统计平均成免版税的污泥。为机械而战。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_040",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Translation rights matter too. AI translating my novel without a deal still violates my copyright.",
+        "es": "Los derechos de traducción también importan. La traducción automática de mi novela sin acuerdo sigue violando mis derechos de autor.",
+        "ar": "حقوق الترجمة مهمة أيضًا. ترجمة الذكاء الاصطناعي لروايتي دون صفقة لا تزال تنتهك حقوق الطبع والنشر الخاصة بي.",
+        "zh": "翻译权也很重要。人工智能在没有达成协议的情况下翻译我的小说仍然侵犯了我的版权。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_041",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Studios using AI to replace background artists after training on those same artists' years of work. Cruel.",
+        "es": "Estudios que utilizan IA para reemplazar a los artistas de fondo después de capacitarse sobre los años de trabajo de esos mismos artistas. Cruel.",
+        "ar": "استوديوهات تستخدم الذكاء الاصطناعي لتحل محل فناني الخلفية بعد التدريب على سنوات عمل هؤلاء الفنانين أنفسهم. فظ.",
+        "zh": "在对这些艺术家多年的工作进行培训后，工作室使用人工智能来替换背景艺术家。残忍的。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_042",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "We need provenance standards: every generative output should disclose training sources when feasible.",
+        "es": "Necesitamos estándares de procedencia: cada resultado generativo debe revelar las fuentes de capacitación cuando sea posible.",
+        "ar": "نحن بحاجة إلى معايير المصدر: كل مخرجات إنتاجية يجب أن تكشف عن مصادر التدريب عندما يكون ذلك ممكنًا.",
+        "zh": "我们需要出处标准：每个生成输出都应在可行的情况下公开培训来源。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_043",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Creative unions organizing around AI consent are the only reason some platforms even mention compensation.",
+        "es": "Los sindicatos creativos que se organizan en torno al consentimiento de la IA son la única razón por la que algunas plataformas incluso mencionan la compensación.",
+        "ar": "إن النقابات الإبداعية التي تنظم حول موافقة الذكاء الاصطناعي هي السبب الوحيد الذي يجعل بعض المنصات تذكر التعويضات.",
+        "zh": "围绕人工智能同意组织的创意联盟是一些平台甚至提到补偿的唯一原因。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_044",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "'Publicly scraped' is not a moral license. Public park ≠ free to bulldoze for a data center.",
+        "es": "\"Eliminar públicamente\" no es una licencia moral. Parque público ≠ gratuito para demoler para un centro de datos.",
+        "ar": "\"كشط علنا\" ليس ترخيصا أخلاقيا. حديقة عامة ≠ مجانية للجرافات لمركز البيانات.",
+        "zh": "“公开刮擦”并不是道德许可。公共公园≠可以随意推平数据中心。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_045",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "My workshop slides ended up in a commercial coding-model corpus. Teaching materials aren't free training fuel.",
+        "es": "Las diapositivas de mi taller terminaron en un corpus de modelo de codificación comercial. Los materiales didácticos no son combustible gratuito para la formación.",
+        "ar": "انتهت شرائح ورشة العمل الخاصة بي إلى مجموعة من نماذج البرمجة التجارية. المواد التعليمية ليست وقودًا مجانيًا للتدريب.",
+        "zh": "我的研讨会幻灯片最终出现在商业编码模型语料库中。教材并不是免费的培训燃料。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_046",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Indie game pixel artists seeing asset packs that clone their palettes and animations. Death by a thousand gens.",
+        "es": "Artistas de píxeles de juegos independientes ven paquetes de recursos que clonan sus paletas y animaciones. Muerte por mil gens.",
+        "ar": "يرى فنانو بكسل الألعاب المستقلة حزم الأصول التي تستنسخ لوحاتهم ورسومهم المتحركة. الموت بألف عشيرة.",
+        "zh": "独立游戏像素艺术家看到克隆他们的调色板和动画的资源包。千氏之死。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_047",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Until models can prove clean data lineage, I assume every 'free' generator is built on unpaid labor.",
+        "es": "Hasta que los modelos puedan demostrar que el linaje de datos es limpio, asumo que cada generador \"gratuito\" se basa en mano de obra no remunerada.",
+        "ar": "وإلى أن تتمكن النماذج من إثبات نسب البيانات النظيف، أفترض أن كل مولد \"مجاني\" مبني على عمالة غير مدفوعة الأجر.",
+        "zh": "在模型能够证明干净的数据谱系之前，我假设每个“免费”发电机都是建立在无偿劳动的基础上的。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_048",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Editors cutting human cover artists because AI is 'good enough'. Good enough built on whose portfolios?",
+        "es": "Los editores eliminan a los artistas de portada humanos porque la IA es \"suficientemente buena\". ¿Lo suficientemente bueno basado en las carteras de quién?",
+        "ar": "يقوم المحررون بقطع فناني الغلاف البشري لأن الذكاء الاصطناعي \"جيد بما فيه الكفاية\". جيدة بما فيه الكفاية بنيت على محافظ من؟",
+        "zh": "编辑们裁掉了人类封面艺术家，因为人工智能“足够好”。足够好建立在谁的投资组合之上？"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_049",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "Copyright maximalism isn't the goal — consent, credit, and compensation are. AI broke all three.",
+        "es": "El maximalismo de los derechos de autor no es el objetivo: el consentimiento, el crédito y la compensación sí lo son. La IA rompió los tres.",
+        "ar": "إن تعظيم حقوق الطبع والنشر ليس هو الهدف، بل الهدف هو الموافقة والائتمان والتعويض. لقد كسر الذكاء الاصطناعي الثلاثة.",
+        "zh": "版权最大化主义不是目标——同意、信用和补偿才是。人工智能打破了这三者。"
+      }
+    },
+    {
+      "post_id": "ai_copyright_theft_050",
+      "topic": "ai_copyright_theft",
+      "topic_label": "AI theft of artistic and authors' copyrights",
+      "texts": {
+        "en": "If your demo needs 'in the style of living artist X', you already know you're crossing an ethical line.",
+        "es": "Si tu demostración necesita \"al estilo del artista vivo X\", ya sabes que estás cruzando una línea ética.",
+        "ar": "إذا كان العرض التوضيحي الخاص بك يحتاج إلى \"أسلوب الفنان الحي X\"، فأنت تعلم بالفعل أنك تتجاوز الخط الأخلاقي.",
+        "zh": "如果您的演示需要“采用当代艺术家 X 的风格”，那么您就已经知道自己正在跨越道德底线。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_001",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Cities deploying real-time facial recognition on every corner. Dissent becomes a searchable database.",
+        "es": "Ciudades que implementan reconocimiento facial en tiempo real en cada esquina. La disidencia se convierte en una base de datos con capacidad de búsqueda.",
+        "ar": "المدن تنشر تقنية التعرف على الوجه في الوقت الفعلي في كل زاوية. المعارضة تصبح قاعدة بيانات قابلة للبحث.",
+        "zh": "城市的每个角落都部署了实时面部识别。异议成为可搜索的数据库。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_002",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Predictive policing models recycle historical bias and call it objective risk scoring. Communities notice.",
+        "es": "Los modelos policiales predictivos reciclan el sesgo histórico y lo llaman puntuación de riesgo objetiva. Aviso de las comunidades.",
+        "ar": "تعمل نماذج الشرطة التنبؤية على إعادة تدوير التحيز التاريخي وتسميته تسجيل المخاطر الموضوعي. إشعار المجتمعات.",
+        "zh": "预测性警务模型回收了历史偏差，并将其称为客观风险评分。社区通知。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_003",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Your smart doorbell footage is feeding vendor models. Convenience is the recruitment pitch for surveillance.",
+        "es": "Las imágenes de su timbre inteligente están alimentando a los modelos de proveedores. La conveniencia es el argumento de reclutamiento para la vigilancia.",
+        "ar": "إن لقطات جرس الباب الذكي الخاصة بك تغذي نماذج البائعين. الراحة هي الملعب التوظيف للمراقبة.",
+        "zh": "您的智能门铃视频正在为供应商模型提供支持。便利性是监视的招募理由。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_004",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "AI that flags 'suspicious' gait patterns in malls should terrify anyone who values anonymity in public.",
+        "es": "La IA que detecta patrones de marcha \"sospechosos\" en los centros comerciales debería aterrorizar a cualquiera que valore el anonimato en público.",
+        "ar": "الذكاء الاصطناعي الذي يشير إلى أنماط مشية \"مشبوهة\" في مراكز التسوق يجب أن يخيف أي شخص يقدر عدم الكشف عن هويته في الأماكن العامة.",
+        "zh": "人工智能在商场中标记“可疑”步态模式应该会吓到任何在公共场合重视匿名的人。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_005",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Governments buying emotion-recognition cameras for protests. Pseudoscience with handcuffs attached.",
+        "es": "Los gobiernos compran cámaras de reconocimiento de emociones para las protestas. Pseudociencia con esposas.",
+        "ar": "الحكومات تشتري كاميرات التعرف على المشاعر للاحتجاجات العلوم الزائفة مع الأصفاد المرفقة.",
+        "zh": "政府为抗议活动购买情绪识别摄像头。带着手铐的伪科学。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_006",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "License plate readers plus cloud AI means your daily routes are a permanent dossier. Opting out isn't offered.",
+        "es": "Los lectores de matrículas más la IA en la nube significan que sus rutas diarias son un expediente permanente. No se ofrece la opción de no participar.",
+        "ar": "قارئات لوحة الترخيص بالإضافة إلى الذكاء الاصطناعي السحابي تعني أن مساراتك اليومية هي ملف دائم. لا يتم تقديم خيار إلغاء الاشتراك.",
+        "zh": "车牌读取器加上云人工智能意味着您的日常路线将成为永久档案。不提供选择退出。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_007",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Schools scanning student faces for attendance normalize biometric tracking before kids can consent.",
+        "es": "Las escuelas que escanean los rostros de los estudiantes para comprobar la asistencia normalizan el seguimiento biométrico antes de que los niños puedan dar su consentimiento.",
+        "ar": "تعمل المدارس التي تقوم بمسح وجوه الطلاب للحضور على تطبيع التتبع البيومتري قبل أن يتمكن الأطفال من الموافقة.",
+        "zh": "学校扫描学生面部出勤情况，在孩子们同意之前将生物识别跟踪标准化。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_008",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "When chat apps offer 'AI safety scanning' of private messages, assume content is classified at scale.",
+        "es": "Cuando las aplicaciones de chat ofrecen un 'escaneo de seguridad mediante IA' de mensajes privados, se asume que el contenido está clasificado a escala.",
+        "ar": "عندما تقدم تطبيقات الدردشة \"فحصًا آمنًا مدعومًا بالذكاء الاصطناعي\" للرسائل الخاصة، فافترض أن المحتوى مصنف على نطاق واسع.",
+        "zh": "当聊天应用程序提供私人消息的“人工智能安全扫描”时，假设内容已大规模分类。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_009",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Drone swarms with onboard person re-identification turn neighborhoods into open-air panopticons.",
+        "es": "Los enjambres de drones con reidentificación de personas a bordo convierten a los vecindarios en panópticos al aire libre.",
+        "ar": "أسراب الطائرات بدون طيار مع إمكانية إعادة تحديد هوية الأشخاص على متنها تحول الأحياء إلى لوحات بانوبتيكونية في الهواء الطلق.",
+        "zh": "具有机载人员重新识别功能的无人机群将社区变成了露天圆形监狱。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_010",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Credit scorers experimenting with social media sentiment AI. Your jokes could price your loan.",
+        "es": "Calificadores de crédito que experimentan con la IA del sentimiento de las redes sociales. Sus chistes podrían ponerle precio a su préstamo.",
+        "ar": "يقوم المسجلون الائتمانيون بتجربة الذكاء الاصطناعي لمشاعر وسائل التواصل الاجتماعي. النكات الخاصة بك يمكن أن سعر القرض الخاص بك.",
+        "zh": "信用评分员正在尝试社交媒体情绪人工智能。你的笑话可能会给你的贷款定价。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_011",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Border AI that predicts 'intent' from microexpressions is prejudice automated and exported.",
+        "es": "La IA fronteriza que predice la \"intención\" a partir de microexpresiones automatiza y exporta los prejuicios.",
+        "ar": "الذكاء الاصطناعي الحدودي الذي يتنبأ بـ \"النية\" من التعبيرات الدقيقة هو تحيز آلي ويتم تصديره.",
+        "zh": "通过微表情预测“意图”的边境人工智能是偏见的自动化和输出。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_012",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Employers monitoring keystroke dynamics and webcam attention scores. Productivity theater meets dystopia.",
+        "es": "Los empleadores monitorean la dinámica de pulsaciones de teclas y los puntajes de atención de la cámara web. El teatro de productividad se encuentra con la distopía.",
+        "ar": "يقوم أصحاب العمل بمراقبة ديناميكيات ضغطات المفاتيح ونتائج انتباه كاميرا الويب. مسرح الإنتاجية يلتقي بالديستوبيا.",
+        "zh": "雇主监控击键动态和网络摄像头注意力得分。生产力剧场与反乌托邦相遇。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_013",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Public CCTV upgraded with AI search: find everyone who wore a red jacket near the plaza. Chilling effect incoming.",
+        "es": "CCTV público actualizado con búsqueda por IA: encuentre a todos los que llevaban una chaqueta roja cerca de la plaza. Se acerca el efecto escalofriante.",
+        "ar": "تمت ترقية الدوائر التلفزيونية المغلقة العامة باستخدام بحث الذكاء الاصطناعي: ابحث عن كل من يرتدي سترة حمراء بالقرب من الساحة. تأثير التبريد وارد.",
+        "zh": "公共闭路电视升级AI搜索：找到广场附近所有穿红夹克的人。寒意袭来。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_014",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Voice assistants always listening for a wake word still buffer audio. That buffer is a surveillance surface.",
+        "es": "Los asistentes de voz que siempre escuchan una palabra de activación aún almacenan el audio. Ese amortiguador es una superficie de vigilancia.",
+        "ar": "يستمع المساعدون الصوتيون دائمًا إلى كلمة التنبيه ولا يزالون يقومون بتخزين الصوت. هذا المخزن المؤقت هو سطح المراقبة.",
+        "zh": "始终监听唤醒词的语音助手仍然会缓冲音频。该缓冲区是一个监视表面。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_015",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Municipalities claim anonymized heatmaps while vendors keep re-identification keys. Trust, but verify — then don't trust.",
+        "es": "Los municipios reclaman mapas de calor anónimos, mientras que los proveedores conservan claves de reidentificación. Confía, pero verifica; luego no confíes.",
+        "ar": "تطالب البلديات بخرائط حرارية مجهولة المصدر بينما يحتفظ البائعون بمفاتيح إعادة التعريف. ثق، ولكن تحقق، ثم لا تثق.",
+        "zh": "市政当局声称拥有匿名热图，而供应商则保留重新识别密钥。信任，但要验证——然后就不要信任。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_016",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "AI moderation tools used by police to scrape activist Discords. Community spaces aren't safe by default anymore.",
+        "es": "Herramientas de moderación de IA utilizadas por la policía para eliminar a los activistas Discords. Los espacios comunitarios ya no son seguros por defecto.",
+        "ar": "أدوات اعتدال الذكاء الاصطناعي التي تستخدمها الشرطة لإزالة الخلافات بين الناشطين. لم تعد المساحات المجتمعية آمنة بشكل افتراضي بعد الآن.",
+        "zh": "警方使用人工智能审核工具来消除激进分子的不和谐。默认情况下，社区空间不再安全。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_017",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Smart streetlights that track phones via MAC randomization defeat — until AI fingerprinting catches up.",
+        "es": "Las farolas inteligentes que rastrean los teléfonos a través de la aleatorización MAC fracasan, hasta que las huellas dactilares de la IA se ponen al día.",
+        "ar": "مصابيح الشوارع الذكية التي تتعقب الهواتف عبر هزيمة التوزيع العشوائي لـ MAC - حتى تلحق بصمات الذكاء الاصطناعي.",
+        "zh": "通过 MAC 随机化追踪手机的智能路灯失败了——直到人工智能指纹识别赶上来。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_018",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Insurance apps wanting continuous driving AI scores. Refuse and pay more. Coerced surveillance.",
+        "es": "Aplicaciones de seguros que desean puntuaciones de IA de conducción continua. Rechaza y paga más. Vigilancia forzada.",
+        "ar": "تطبيقات التأمين تريد الحصول على نتائج الذكاء الاصطناعي بشكل مستمر. رفض ودفع المزيد. المراقبة القسرية",
+        "zh": "保险应用程序希望持续推动人工智能分数。拒绝并支付更多费用。强制监视。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_019",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Mass scraping of social posts to build 'threat' graphs. Speech becomes evidence before any crime exists.",
+        "es": "Eliminación masiva de publicaciones sociales para crear gráficos de \"amenazas\". El discurso se convierte en evidencia antes de que exista cualquier delito.",
+        "ar": "تجريف جماعي للمشاركات الاجتماعية لإنشاء رسوم بيانية \"للتهديد\". ويصبح الكلام دليلاً قبل وقوع أي جريمة.",
+        "zh": "大规模抓取社交帖子以构建“威胁”图表。在任何犯罪发生之前，言语就成为证据。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_020",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Hospitals piloting AI visitor face logs. Medical privacy shouldn't end at the lobby camera.",
+        "es": "Hospitales que ponen a prueba registros de caras de visitantes con IA. La privacidad médica no debería terminar en la cámara del vestíbulo.",
+        "ar": "تقوم المستشفيات بتجريب سجلات وجوه الزائرين التي تعمل بتقنية الذكاء الاصطناعي. لا ينبغي أن تنتهي الخصوصية الطبية عند كاميرا الردهة.",
+        "zh": "医院试点人工智能访客面部日志。医疗隐私不应仅止于大厅摄像头。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_021",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Autonomous cameras that zoom on 'unusual loitering' encode poverty as suspicion.",
+        "es": "Las cámaras autónomas que hacen zoom sobre la \"holgazanería inusual\" codifican la pobreza como sospecha.",
+        "ar": "الكاميرات المستقلة التي تقوم بتكبير \"التسكع غير العادي\" ترمز إلى الفقر على أنه شك.",
+        "zh": "自动摄像头放大“不寻常的游荡”，将贫困编码为怀疑。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_022",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "National ID plus AI face match at every transit gate is a recipe for political control, not safety.",
+        "es": "La identificación nacional más la comparación facial de IA en cada puerta de tránsito es una receta para el control político, no para la seguridad.",
+        "ar": "إن مطابقة الوجه باستخدام بطاقة الهوية الوطنية والذكاء الاصطناعي عند كل بوابة عبور هي وصفة للسيطرة السياسية، وليس السلامة.",
+        "zh": "国民身份证加上每个过境口的人工智能面部识别是政治控制的良方，而不是安全的良方。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_023",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Retailers using AI to score shoppers for theft risk by appearance. Discrimination with a dashboard.",
+        "es": "Los minoristas utilizan IA para calificar a los compradores por riesgo de robo según su apariencia. Discriminación con un tablero.",
+        "ar": "يستخدم تجار التجزئة الذكاء الاصطناعي لتسجيل المتسوقين لمخاطر السرقة حسب المظهر. التمييز مع لوحة القيادة.",
+        "zh": "零售商使用人工智能根据外观对购物者的盗窃风险进行评分。仪表板的歧视。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_024",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Encrypted messaging is under pressure precisely because it blocks wholesale AI content surveillance.",
+        "es": "La mensajería cifrada está bajo presión precisamente porque bloquea la vigilancia generalizada del contenido de la IA.",
+        "ar": "تتعرض الرسائل المشفرة للضغط على وجه التحديد لأنها تمنع مراقبة محتوى الذكاء الاصطناعي بالجملة.",
+        "zh": "加密消息传递正面临压力，因为它阻止了大规模的人工智能内容监控。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_025",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "City dashboards promising 'safer streets' while quietly expanding always-on audio analytics. Read the procurement docs.",
+        "es": "Los paneles de control de la ciudad prometen \"calles más seguras\" y al mismo tiempo amplían silenciosamente el análisis de audio siempre activo. Lea los documentos de adquisiciones.",
+        "ar": "تعد لوحات معلومات المدينة بـ \"شوارع أكثر أمانًا\" مع توسيع التحليلات الصوتية التي تعمل دائمًا بهدوء. اقرأ مستندات المشتريات.",
+        "zh": "城市仪表板承诺“更安全的街道”，同时悄然扩展始终在线的音频分析。阅读采购文档。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_026",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Refugee camps monitored by AI perimeter systems. Vulnerable people get the densest surveillance first.",
+        "es": "Campos de refugiados monitoreados por sistemas perimetrales de IA. Las personas vulnerables reciben primero la vigilancia más estricta.",
+        "ar": "مخيمات اللاجئين التي تتم مراقبتها بواسطة أنظمة محيط الذكاء الاصطناعي. يحصل الأشخاص الضعفاء على المراقبة الأكثر كثافة أولاً.",
+        "zh": "由人工智能周边系统监控的难民营。弱势群体首先受到最密集的监视。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_027",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Your fitness tracker location trails sold into data brokers, then enriched with AI lifestyle profiles.",
+        "es": "La ubicación de su rastreador de actividad física se vende a intermediarios de datos y luego se enriquece con perfiles de estilo de vida de IA.",
+        "ar": "يتم بيع مسارات موقع جهاز تعقب اللياقة البدنية الخاص بك إلى وسطاء البيانات، ثم يتم إثراؤها بملفات تعريف أسلوب الحياة المدعمة بالذكاء الاصطناعي.",
+        "zh": "您的健身追踪器位置轨迹会被出售给数据经纪人，然后通过人工智能生活方式档案进行丰富。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_028",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Police bodycams with live AI prompting officers — who audits the prompts when they escalate encounters?",
+        "es": "Cámaras corporales de la policía con IA en vivo que avisan a los agentes: ¿quién audita las indicaciones cuando intensifican los encuentros?",
+        "ar": "كاميرات الشرطة الشخصية المزودة بضباط توجيه مباشر من الذكاء الاصطناعي - من يراجع المطالبات عند تصعيد المواجهات؟",
+        "zh": "警察随身摄像头配有实时人工智能提示警官——当他们升级冲突时谁会审核提示？"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_029",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Social credit experiments don't need that name to arrive. Behavior scores from AI cameras are enough.",
+        "es": "Los experimentos de crédito social no necesitan ese nombre para llegar. Las puntuaciones de comportamiento de las cámaras de IA son suficientes.",
+        "ar": "لا تحتاج تجارب الائتمان الاجتماعي إلى هذا الاسم للوصول. نتائج السلوك من كاميرات الذكاء الاصطناعي كافية.",
+        "zh": "社会信用实验不需要这个名字。 AI 摄像头的行为评分就足够了。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_030",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Airports expanding AI behavioral detection beyond security theater into permanent passenger dossiers.",
+        "es": "Los aeropuertos amplían la detección del comportamiento de la IA más allá del ámbito de seguridad a los expedientes permanentes de los pasajeros.",
+        "ar": "تقوم المطارات بتوسيع الكشف عن سلوكيات الذكاء الاصطناعي إلى ما هو أبعد من المسرح الأمني ​​إلى ملفات الركاب الدائمة.",
+        "zh": "机场将人工智能行为检测从安检区扩展到永久乘客档案。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_031",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Landlords installing AI hallway cams that alert on 'unauthorized guests'. Housing becomes a watchlist.",
+        "es": "Los propietarios instalan cámaras de pasillo con inteligencia artificial que alertan sobre \"invitados no autorizados\". La vivienda se convierte en una lista de vigilancia.",
+        "ar": "يقوم الملاك بتثبيت كاميرات الذكاء الاصطناعي للممرات لتنبيه \"الضيوف غير المصرح لهم\". يصبح الإسكان قائمة مراقبة.",
+        "zh": "房东在走廊安装人工智能摄像头，对“未经授权的客人”发出警报。住房成为一个观察名单。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_032",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Open-source face datasets built without consent power commercial surveillance stacks worldwide.",
+        "es": "Los conjuntos de datos faciales de código abierto creados sin consentimiento alimentan las pilas de vigilancia comercial en todo el mundo.",
+        "ar": "مجموعات بيانات الوجه مفتوحة المصدر التي تم إنشاؤها دون موافقة تعمل على تشغيل مجموعات المراقبة التجارية في جميع أنحاء العالم.",
+        "zh": "未经同意而构建的开源人脸数据集为全球商业监控堆栈提供支持。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_033",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "When every lamppost can run a person detector, freedom of assembly depends on who controls the model.",
+        "es": "Cuando cada farola puede controlar un detector de personas, la libertad de montaje depende de quién controla el modelo.",
+        "ar": "عندما يتمكن كل عمود إنارة من تشغيل جهاز كشف الأشخاص، فإن حرية التجميع تعتمد على من يتحكم في النموذج.",
+        "zh": "当每个灯柱都可以运行人体探测器时，组装的自由度取决于谁控制模型。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_034",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "AI tip lines that auto-prioritize anonymous reports will amplify harassment campaigns against minorities.",
+        "es": "Las líneas de información de IA que priorizan automáticamente los informes anónimos amplificarán las campañas de acoso contra las minorías.",
+        "ar": "ستعمل إرشادات الذكاء الاصطناعي التي تعطي الأولوية تلقائيًا للتقارير المجهولة على تضخيم حملات التحرش ضد الأقليات.",
+        "zh": "自动优先处理匿名举报的人工智能举报热线将放大针对少数群体的骚扰活动。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_035",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Car makers shipping cabin cameras with driver-attention AI. Your face becomes telematics.",
+        "es": "Los fabricantes de automóviles envían cámaras de cabina con inteligencia artificial para prestar atención al conductor. Tu rostro se vuelve telemático.",
+        "ar": "يقوم صانعو السيارات بشحن كاميرات المقصورة مع الذكاء الاصطناعي الذي يلفت انتباه السائق. وجهك يصبح التليماتية.",
+        "zh": "汽车制造商推出带有驾驶员注意力人工智能功能的车载摄像头。你的脸变成了远程信息处理。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_036",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Public Wi-Fi captive portals harvesting device IDs for AI foot-traffic analytics. Free internet, costly privacy.",
+        "es": "Portales cautivos de Wi-Fi públicos que recopilan ID de dispositivos para análisis de tráfico peatonal mediante IA. Internet gratis, privacidad costosa.",
+        "ar": "تقوم بوابات Wi-Fi العامة بجمع معرفات الأجهزة لتحليلات حركة المرور على الأقدام باستخدام الذكاء الاصطناعي. إنترنت مجاني وخصوصية مكلفة.",
+        "zh": "公共 Wi-Fi 强制门户收集设备 ID 以进行 AI 客流量分析。免费的互联网，昂贵的隐私。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_037",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Fusion centers correlating protest livestreams with face search. Journalism and activism both at risk.",
+        "es": "Centros de fusión que correlacionan transmisiones en vivo de protestas con búsqueda de rostros. Tanto el periodismo como el activismo están en riesgo.",
+        "ar": "تربط مراكز الاندماج البث المباشر للاحتجاجات بالبحث عن الوجوه. الصحافة والنشاط كلاهما في خطر.",
+        "zh": "融合中心将抗议直播与人脸搜索联系起来。新闻业和激进主义都面临风险。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_038",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Child monitoring apps marketed to parents become government-accessible telemetry with one subpoena.",
+        "es": "Las aplicaciones de seguimiento infantil comercializadas para los padres se convierten en telemetría accesible al gobierno con una citación.",
+        "ar": "تصبح تطبيقات مراقبة الأطفال التي يتم تسويقها للآباء بمثابة قياس عن بعد يمكن للحكومة الوصول إليه من خلال أمر استدعاء واحد.",
+        "zh": "向家长销售的儿童监控应用程序成为政府只需一张传票即可访问的遥测技术。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_039",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Stadiums scanning crowds with AI weapons detection — accuracy claims hide false positive rates on brown skin.",
+        "es": "Los estadios escanean multitudes con detección de armas de IA: las afirmaciones de precisión ocultan tasas de falsos positivos en pieles morenas.",
+        "ar": "تقوم الملاعب بمسح الحشود من خلال اكتشاف أسلحة الذكاء الاصطناعي، حيث تخفي ادعاءات الدقة معدلات إيجابية كاذبة على الجلد البني.",
+        "zh": "体育场使用人工智能武器检测扫描人群——声称的准确性掩盖了棕色皮肤的误报率。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_040",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Smart cities pitch efficiency; the architecture is continuous population instrumentation.",
+        "es": "Las ciudades inteligentes presentan eficiencia; La arquitectura es instrumentación de población continua.",
+        "ar": "المدن الذكية تروج للكفاءة؛ الهندسة المعمارية هي الأجهزة السكانية المستمرة.",
+        "zh": "智慧城市提升效率；该架构是连续的人口仪器。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_041",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Whistleblowers warned about bulk biometric databases years ago. Procurement just kept accelerating.",
+        "es": "Los denunciantes advirtieron hace años sobre las bases de datos biométricas masivas. Las adquisiciones siguieron acelerándose.",
+        "ar": "حذر المبلغون عن المخالفات من قواعد البيانات البيومترية المجمعة منذ سنوات. استمرت عمليات الشراء في التسارع.",
+        "zh": "举报人多年前就曾警告过有关大量生物识别数据库的问题。采购不断加速。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_042",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "AI that predicts 'radicalization' from library checkouts and search history is McCarthyism with GPUs.",
+        "es": "La IA que predice la \"radicalización\" de las salidas en bibliotecas y el historial de búsqueda es el macartismo con las GPU.",
+        "ar": "الذكاء الاصطناعي الذي يتنبأ بـ \"التطرف\" من خلال عمليات الخروج من المكتبات وسجل البحث هو مكارثية مع وحدات معالجة الرسومات.",
+        "zh": "从图书馆借阅和搜索历史中预测“激进化”的人工智能是 GPU 的麦卡锡主义。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_043",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Delivery robots mapping sidewalks with cameras normalize private fleets as mobile surveillance nodes.",
+        "es": "Los robots de reparto que mapean las aceras con cámaras normalizan las flotas privadas como nodos de vigilancia móviles.",
+        "ar": "تعمل روبوتات التوصيل التي ترسم خرائط الأرصفة بالكاميرات على تطبيع الأساطيل الخاصة كعقد مراقبة متنقلة.",
+        "zh": "送货机器人用摄像头绘制人行道地图，将私人车队标准化为移动监控节点。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_044",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Prisons using AI to score inmate 'risk' from call transcripts. Speech inside walls is never free.",
+        "es": "Las prisiones utilizan IA para calificar el \"riesgo\" de los reclusos a partir de las transcripciones de llamadas. La expresión dentro de las paredes nunca es libre.",
+        "ar": "السجون تستخدم الذكاء الاصطناعي لتسجيل \"مخاطر\" السجناء من نصوص المكالمات الكلام داخل الجدران ليس مجانيًا أبدًا.",
+        "zh": "监狱使用人工智能从通话记录中对囚犯的“风险”进行评分。墙内的言论从来都不是自由的。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_045",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Corporate campuses tracking badge plus face continuous authentication. Workers are perpetual suspects.",
+        "es": "Insignia de seguimiento de campus corporativos más autenticación facial continua. Los trabajadores son perpetuos sospechosos.",
+        "ar": "شارة تتبع الحرم الجامعي للشركات بالإضافة إلى المصادقة المستمرة للوجه. العمال هم المشتبه بهم الدائمين.",
+        "zh": "企业园区跟踪徽章加人脸连续身份验证。工人永远是嫌疑人。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_046",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Newsrooms doxed by AI reverse image search on blurred sources. Protection of sources is eroding.",
+        "es": "Salas de redacción engañadas por la búsqueda inversa de imágenes por IA en fuentes borrosas. La protección de las fuentes se está erosionando.",
+        "ar": "غرف الأخبار متأثرة بالبحث العكسي عن الصور بواسطة الذكاء الاصطناعي على مصادر غير واضحة. حماية المصادر تتآكل.",
+        "zh": "新闻编辑室通过人工智能反向图像搜索模糊来源进行人肉搜索。对来源的保护正在受到侵蚀。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_047",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Environmental sensors that also run mics for 'gunshot detection' double as protest audio collectors.",
+        "es": "Los sensores ambientales que también activan micrófonos para la \"detección de disparos\" también funcionan como recopiladores de audio de protesta.",
+        "ar": "تتضاعف أجهزة الاستشعار البيئية التي تقوم أيضًا بتشغيل الميكروفونات من أجل \"الكشف عن الطلقات النارية\" كمجمعات صوتية احتجاجية.",
+        "zh": "环境传感器还运行麦克风进行“枪声检测”，同时充当抗议音频收集器。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_048",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Once face search is cheap, every uploaded party photo is a potential identification query against you.",
+        "es": "Una vez que la búsqueda de rostros sea barata, cada foto de fiesta cargada será una posible consulta de identificación en su contra.",
+        "ar": "بمجرد أن يصبح البحث عن الوجه رخيصًا، فإن كل صورة تم تحميلها للحفلة ستكون بمثابة استعلام محتمل لتحديد الهوية ضدك.",
+        "zh": "一旦面部搜索变得便宜，每张上传的聚会照片都可能成为针对您的身份查询。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_049",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "Democratic oversight of AI surveillance lags deployment by years. That gap is the product.",
+        "es": "La supervisión democrática de la vigilancia de la IA lleva años de retraso en su implementación. Esa brecha es el producto.",
+        "ar": "إن الرقابة الديمقراطية على مراقبة الذكاء الاصطناعي تتأخر في النشر لسنوات. هذه الفجوة هي المنتج.",
+        "zh": "对人工智能监控的民主监督滞后于部署数年。这个差距就是产品。"
+      }
+    },
+    {
+      "post_id": "ai_mass_surveillance_050",
+      "topic": "ai_mass_surveillance",
+      "topic_label": "AI-enabled mass surveillance",
+      "texts": {
+        "en": "I want safer cities. I don't want a searchable catalog of every face that walked past city hall.",
+        "es": "Quiero ciudades más seguras. No quiero un catálogo con capacidad de búsqueda de cada rostro que pasó por el ayuntamiento.",
+        "ar": "أريد مدنًا أكثر أمانًا. لا أريد كتالوجًا يمكن البحث فيه عن كل وجه مر أمام قاعة المدينة.",
+        "zh": "我想要更安全的城市。我不想要一份可搜索的目录，其中包含走过市政厅的每张面孔。"
+      }
+    }
+  ]
+}
