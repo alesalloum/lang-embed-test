@@ -1,1 +1,5 @@
 deep-translator>=1.11.4
+sentence-transformers>=2.7.0
+transformers>=4.51.0
+torch
+numpy>=1.26.0
