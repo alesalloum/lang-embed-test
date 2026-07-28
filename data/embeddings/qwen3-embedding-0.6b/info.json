@@ -1,0 +1,27 @@
+{
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "created_at": "2026-07-28T22:31:38.156515+00:00",
+  "input": "data/posts.jsonl",
+  "n_records": 600,
+  "embedding_dim": 1024,
+  "dtype": "float32",
+  "normalized": true,
+  "prompt": null,
+  "notes": "Document embeddings (no query prompt). L2-normalized. Row i in embeddings.npy matches metadata.jsonl / ids.json index i.",
+  "files": {
+    "embeddings.npy": "shape (600, 1024) float32",
+    "metadata.jsonl": "One JSON object per row, includes full text",
+    "ids.json": "Compact index/post_id/topic/language for each row"
+  },
+  "topics": [
+    "ai_coding_innovations",
+    "ai_copyright_theft",
+    "ai_mass_surveillance"
+  ],
+  "languages": [
+    "ar",
+    "en",
+    "es",
+    "zh"
+  ]
+}

@@ -32,6 +32,19 @@ Artificial social-media posts for studying multilingual embeddings and k-means.
 
 English posts were written as imaginary social-media style text. Spanish, Arabic, and Chinese versions were produced with machine translation (`deep-translator` / Google Translate) via `scripts/generate_toy_posts.py`, with a few manual fixes for obvious MT failures.
 
+## Embeddings
+
+Saved under [`embeddings/qwen3-embedding-0.6b/`](embeddings/qwen3-embedding-0.6b/):
+
+- Model: `Qwen/Qwen3-Embedding-0.6B`
+- All 600 flat records from `posts.jsonl`
+- L2-normalized document embeddings (no query prompt)
+- `embeddings.npy` row `i` aligns with `metadata.jsonl` / `ids.json` index `i`
+
+```bash
+python scripts/embed_posts.py
+```
+
 ## Intended use
 
 Embed all 600 texts, run k-means with k=3, and compare clusters to `topic` (desired) versus `language` (undesired language silos).
