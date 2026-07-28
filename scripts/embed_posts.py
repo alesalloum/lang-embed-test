@@ -48,23 +48,15 @@ def main() -> None:
     print(f"Loading model {args.model!r} …")
 
     load_kwargs: dict = {
-        "tokenizer_kwargs": {"padding_side": "left"},
+        "processor_kwargs": {"padding_side": "left"},
     }
-    # Prefer processor_kwargs on newer sentence-transformers; fall back if unsupported.
-    try:
-        probe = SentenceTransformer.__init__.__code__.co_varnames
-    except AttributeError:
-        probe = ()
-    if "processor_kwargs" in probe or True:
-        load_kwargs = {
-            "processor_kwargs": {"padding_side": "left"},
-        }
     if args.device:
         load_kwargs["device"] = args.device
 
     try:
         model = SentenceTransformer(args.model, **load_kwargs)
     except TypeError:
+        # Older sentence-transformers used tokenizer_kwargs.
         load_kwargs.pop("processor_kwargs", None)
         load_kwargs["tokenizer_kwargs"] = {"padding_side": "left"}
         model = SentenceTransformer(args.model, **load_kwargs)
