@@ -77,3 +77,38 @@ Embed all 600 texts, run k-means with k=3, and compare clusters to `topic` (desi
   "clustering_notes": "Ground-truth cluster label for semantic clustering is `topic`. Each `post_id` appears in 4 languages with the same meaning. A good multilingual embedder + k-means (k=3) should group records by topic, not by language."
 }
 ```
+
+## English users (synthetic)
+
+1000 English-only synthetic users, each with one post per topic (3 topics → 3000 posts). Language fields are present so non-English users can be added later.
+
+Regenerate with:
+
+```bash
+python scripts/generate_english_users.py
+```
+
+### Scale
+
+- **1000** users (`language=en`)
+- **3000** posts (1 per topic per user)
+- Topics: same three as the multilingual toy set
+
+### Files
+
+| File | Format |
+| --- | --- |
+| `users.json` | Nested user list + metadata |
+| `users.jsonl` | One user per line |
+| `users.csv` | Flat users |
+| `user_posts.json` | Posts nested by `user_id` |
+| `user_posts.jsonl` | Flat posts with `user_id` |
+| `user_posts.csv` | Flat CSV |
+
+### User schema
+
+`user_id`, `username`, `display_name`, `language`, `language_name`
+
+### Post schema
+
+`post_id`, `user_id`, `topic`, `topic_label`, `language`, `language_name`, `text`

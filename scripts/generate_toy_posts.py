@@ -12,8 +12,6 @@ import json
 import time
 from pathlib import Path
 
-from deep_translator import GoogleTranslator
-
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 
@@ -205,6 +203,8 @@ ENGLISH_POSTS: dict[str, list[str]] = {
 
 def translate_batch(texts: list[str], target: str, max_retries: int = 5) -> list[str]:
     """Translate a list of English texts to `target` language code."""
+    from deep_translator import GoogleTranslator
+
     translator = GoogleTranslator(source="en", target=target)
     out: list[str] = []
     for i, text in enumerate(texts):
