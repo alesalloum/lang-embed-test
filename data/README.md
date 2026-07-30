@@ -80,35 +80,49 @@ Embed all 600 texts, run k-means with k=3, and compare clusters to `topic` (desi
 
 ## English users (synthetic)
 
-1000 English-only synthetic users, each with one post per topic (3 topics → 3000 posts). Language fields are present so non-English users can be added later.
+Labeled English users for **recovering interest profiles from posts**.
+
+Each user has a predefined `profile_id` and ground-truth `topic_distribution`. Their posts are sampled from that distribution (100 posts / user).
 
 Regenerate with:
 
 ```bash
-python scripts/generate_english_users.py
+python3 scripts/generate_english_users.py
 ```
 
 ### Scale
 
 - **1000** users (`language=en`)
-- **3000** posts (1 per topic per user)
-- Topics: same three as the multilingual toy set
+- **100** posts per user → **100000** posts
+- **7** interest profiles (round-robin assignment)
+
+### Profiles (ground truth)
+
+| profile_id | label | P(coding / copyright / surveillance) |
+| --- | --- | --- |
+| `coding_heavy` | Mostly AI coding innovations | 0.80 / 0.10 / 0.10 |
+| `copyright_heavy` | Mostly AI copyright / theft concerns | 0.10 / 0.80 / 0.10 |
+| `surveillance_heavy` | Mostly AI mass surveillance | 0.10 / 0.10 / 0.80 |
+| `balanced` | Even across all topics | 0.33 / 0.33 / 0.33 |
+| `coding_copyright` | Split: coding + copyright | 0.45 / 0.45 / 0.10 |
+| `coding_surveillance` | Split: coding + surveillance | 0.45 / 0.10 / 0.45 |
+| `copyright_surveillance` | Split: copyright + surveillance | 0.10 / 0.45 / 0.45 |
 
 ### Files
 
 | File | Format |
 | --- | --- |
-| `users.json` | Nested user list + metadata |
-| `users.jsonl` | One user per line |
-| `users.csv` | Flat users |
-| `user_posts.json` | Posts nested by `user_id` |
-| `user_posts.jsonl` | Flat posts with `user_id` |
-| `user_posts.csv` | Flat CSV |
+| `user_profiles.json` | Profile catalog + distributions |
+| `users.json` / `users.jsonl` / `users.csv` | Users with profile + GT dist + empirical counts |
+| `user_posts.jsonl` / `user_posts.csv` | Flat posts (`user_id`, `profile_id`, `topic`, `text`) |
+| `user_posts.json` | Aggregate metadata only (not nested texts) |
 
-### User schema
+### User schema (key fields)
 
-`user_id`, `username`, `display_name`, `language`, `language_name`
+- `profile_id` / `profile_label` — discrete interest type
+- `topic_distribution` — generative ground truth over topics
+- `topic_counts` / `empirical_topic_distribution` — realized post mix
 
-### Post schema
+### Intended use
 
-`post_id`, `user_id`, `topic`, `topic_label`, `language`, `language_name`, `text`
+Embed or model each user's posts, estimate a topic mixture, and compare to `topic_distribution` / `profile_id` (heavy vs balanced vs split).

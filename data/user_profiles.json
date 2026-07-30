@@ -1,0 +1,91 @@
+{
+  "description": "Ground-truth user interest profiles. Each profile defines a topic_distribution used to sample that user's posts. Recovery experiments should try to rediscover profile_id / distribution from posts alone.",
+  "topics": {
+    "ai_coding_innovations": {
+      "label": "AI innovations in coding",
+      "description": "Posts about AI tools improving software development, coding assistants, and engineering productivity."
+    },
+    "ai_copyright_theft": {
+      "label": "AI theft of artistic and authors' copyrights",
+      "description": "Posts about generative AI copying artists/writers without consent or compensation."
+    },
+    "ai_mass_surveillance": {
+      "label": "AI-enabled mass surveillance",
+      "description": "Posts about facial recognition, predictive policing, and AI monitoring of populations."
+    }
+  },
+  "language": "en",
+  "posts_per_user": 100,
+  "profiles": {
+    "coding_heavy": {
+      "profile_id": "coding_heavy",
+      "label": "Mostly AI coding innovations",
+      "description": "Dominantly posts about AI coding tools; rare other topics.",
+      "topic_distribution": {
+        "ai_coding_innovations": 0.8,
+        "ai_copyright_theft": 0.1,
+        "ai_mass_surveillance": 0.1
+      }
+    },
+    "copyright_heavy": {
+      "profile_id": "copyright_heavy",
+      "label": "Mostly AI copyright / theft concerns",
+      "description": "Dominantly posts about generative-AI copyright theft.",
+      "topic_distribution": {
+        "ai_coding_innovations": 0.1,
+        "ai_copyright_theft": 0.8,
+        "ai_mass_surveillance": 0.1
+      }
+    },
+    "surveillance_heavy": {
+      "profile_id": "surveillance_heavy",
+      "label": "Mostly AI mass surveillance",
+      "description": "Dominantly posts about AI-enabled surveillance.",
+      "topic_distribution": {
+        "ai_coding_innovations": 0.1,
+        "ai_copyright_theft": 0.1,
+        "ai_mass_surveillance": 0.8
+      }
+    },
+    "balanced": {
+      "profile_id": "balanced",
+      "label": "Even across all topics",
+      "description": "Posts roughly evenly about all three topics.",
+      "topic_distribution": {
+        "ai_coding_innovations": 0.333333,
+        "ai_copyright_theft": 0.333333,
+        "ai_mass_surveillance": 0.333334
+      }
+    },
+    "coding_copyright": {
+      "profile_id": "coding_copyright",
+      "label": "Split: coding + copyright",
+      "description": "Cares about coding and copyright; rarely surveillance.",
+      "topic_distribution": {
+        "ai_coding_innovations": 0.45,
+        "ai_copyright_theft": 0.45,
+        "ai_mass_surveillance": 0.1
+      }
+    },
+    "coding_surveillance": {
+      "profile_id": "coding_surveillance",
+      "label": "Split: coding + surveillance",
+      "description": "Cares about coding and surveillance; rarely copyright.",
+      "topic_distribution": {
+        "ai_coding_innovations": 0.45,
+        "ai_copyright_theft": 0.1,
+        "ai_mass_surveillance": 0.45
+      }
+    },
+    "copyright_surveillance": {
+      "profile_id": "copyright_surveillance",
+      "label": "Split: copyright + surveillance",
+      "description": "Cares about copyright and surveillance; rarely coding.",
+      "topic_distribution": {
+        "ai_coding_innovations": 0.1,
+        "ai_copyright_theft": 0.45,
+        "ai_mass_surveillance": 0.45
+      }
+    }
+  }
+}

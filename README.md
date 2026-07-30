@@ -9,7 +9,8 @@ See [`data/`](data/README.md):
 - 3 topics × 50 posts × 4 languages (en, es, ar, zh) = **600** texts
 - Topics: AI coding innovations, AI copyright theft, AI mass surveillance
 - Parallel translations share a `post_id`
-- **1000 English users**, each with one post per topic (**3000** user posts)
+- **1000 English users** with predefined interest **profiles** (ground-truth
+  topic distributions) and **100 posts each** (**100_000** user posts)
 
 Regenerate multilingual posts with:
 
@@ -21,8 +22,13 @@ python scripts/generate_toy_posts.py
 Regenerate English users + their posts with:
 
 ```bash
-python scripts/generate_english_users.py
+python3 scripts/generate_english_users.py
 ```
+
+User profiles (`coding_heavy`, `copyright_heavy`, `surveillance_heavy`,
+`balanced`, and dual-interest splits) are defined in
+`scripts/generate_english_users.py` / `data/user_profiles.json`. Each user
+stores `topic_distribution` (generative GT) and realized `topic_counts`.
 
 ## Embeddings
 
