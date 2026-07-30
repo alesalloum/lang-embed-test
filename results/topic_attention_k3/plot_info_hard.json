@@ -1,0 +1,6 @@
+{
+  "attention_type": "hard",
+  "n_users": 1000,
+  "k": 3,
+  "qc_mode": "topic_bridge"
+}

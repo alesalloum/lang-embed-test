@@ -51,3 +51,35 @@ python scripts/embed_posts.py
 ```bash
 python scripts/plot_umap.py
 ```
+
+## Topic clustering + user attention (K=3)
+
+Fit spherical KMeans (`K=3`) on the on-disk Qwen post embeddings, assign hard
+labels + temperature-scaled soft weights, then build per-user attention
+histograms (L1-normalized). Optional Dirichlet shrinkage via `--alpha`.
+
+```bash
+pip install -r requirements.txt
+python scripts/cluster_user_attention.py
+python scripts/cluster_user_attention.py --n-clusters 3 --tau 0.1 --n-init 10 --alpha 0
+python scripts/plot_user_attention.py
+```
+
+Artifacts land in [`results/topic_attention_k3/`](results/topic_attention_k3/).
+
+### Output schema
+
+| File | Schema |
+| --- | --- |
+| `centroids.npy` | `(K, d)` float32 L2-normalized centers |
+| `train_config.json` | seed, `n_clusters`, `n_init`, `tau`, `alpha`, paths, mode |
+| `post_assignments.jsonl` / `.csv` | `post_id`, `user_id`, `hard_label`, `soft_w0..w{K-1}` (+ `topic`/`language`/`source` when available) |
+| `user_attention_soft.jsonl` / `.csv` | `user_id`, `n_posts`, `w0..w{K-1}`, `assignment_type=soft` |
+| `user_attention_hard.jsonl` / `.csv` | same with `assignment_type=hard` |
+| `qc_summary.json` | cluster sizes, inertia, centroid cosines, user entropy / vertex fractions, nearest posts |
+
+**Mode note:** library embeddings (`data/embeddings/...`) have no `user_id`.
+With default `--user-posts data/user_posts.jsonl` and no `--user-embeddings`,
+user posts inherit mean cluster weights of English library posts that share
+the same ground-truth `topic` (topic bridge). Pass `--user-embeddings` aligned
+with `--user-posts` for direct embedding assignment when those vectors exist.
