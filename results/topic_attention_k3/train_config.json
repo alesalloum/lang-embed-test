@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-07-30T09:38:52.732501+00:00",
+  "created_at": "2026-07-30T12:18:14.281059+00:00",
   "emb_dir": "/workspace/data/embeddings/qwen3-embedding-0.6b",
   "embeddings": "/workspace/data/embeddings/qwen3-embedding-0.6b/embeddings.npy",
   "n_clusters": 3,
