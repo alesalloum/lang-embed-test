@@ -77,3 +77,52 @@ Embed all 600 texts, run k-means with k=3, and compare clusters to `topic` (desi
   "clustering_notes": "Ground-truth cluster label for semantic clustering is `topic`. Each `post_id` appears in 4 languages with the same meaning. A good multilingual embedder + k-means (k=3) should group records by topic, not by language."
 }
 ```
+
+## English users (synthetic)
+
+Labeled English users for **recovering interest profiles from posts**.
+
+Each user has a predefined `profile_id` and ground-truth `topic_distribution`. Their posts are sampled from that distribution (100 posts / user).
+
+Regenerate with:
+
+```bash
+python3 scripts/generate_english_users.py
+```
+
+### Scale
+
+- **1000** users (`language=en`)
+- **100** posts per user → **100000** posts
+- **7** interest profiles (round-robin assignment)
+
+### Profiles (ground truth)
+
+| profile_id | label | P(coding / copyright / surveillance) |
+| --- | --- | --- |
+| `coding_heavy` | Mostly AI coding innovations | 0.80 / 0.10 / 0.10 |
+| `copyright_heavy` | Mostly AI copyright / theft concerns | 0.10 / 0.80 / 0.10 |
+| `surveillance_heavy` | Mostly AI mass surveillance | 0.10 / 0.10 / 0.80 |
+| `balanced` | Even across all topics | 0.33 / 0.33 / 0.33 |
+| `coding_copyright` | Split: coding + copyright | 0.45 / 0.45 / 0.10 |
+| `coding_surveillance` | Split: coding + surveillance | 0.45 / 0.10 / 0.45 |
+| `copyright_surveillance` | Split: copyright + surveillance | 0.10 / 0.45 / 0.45 |
+
+### Files
+
+| File | Format |
+| --- | --- |
+| `user_profiles.json` | Profile catalog + distributions |
+| `users.json` / `users.jsonl` / `users.csv` | Users with profile + GT dist + empirical counts |
+| `user_posts.jsonl` / `user_posts.csv` | Flat posts (`user_id`, `profile_id`, `topic`, `text`) |
+| `user_posts.json` | Aggregate metadata only (not nested texts) |
+
+### User schema (key fields)
+
+- `profile_id` / `profile_label` — discrete interest type
+- `topic_distribution` — generative ground truth over topics
+- `topic_counts` / `empirical_topic_distribution` — realized post mix
+
+### Intended use
+
+Embed or model each user's posts, estimate a topic mixture, and compare to `topic_distribution` / `profile_id` (heavy vs balanced vs split).

@@ -1,0 +1,41 @@
+{
+  "description": "English posts sampled from each user's ground-truth topic_distribution. Flat records live in user_posts.jsonl / .csv.",
+  "language": "en",
+  "language_name": "English",
+  "n_users": 1000,
+  "n_posts": 100000,
+  "posts_per_user": 100,
+  "n_topics": 3,
+  "topics": {
+    "ai_coding_innovations": {
+      "label": "AI innovations in coding",
+      "description": "Posts about AI tools improving software development, coding assistants, and engineering productivity."
+    },
+    "ai_copyright_theft": {
+      "label": "AI theft of artistic and authors' copyrights",
+      "description": "Posts about generative AI copying artists/writers without consent or compensation."
+    },
+    "ai_mass_surveillance": {
+      "label": "AI-enabled mass surveillance",
+      "description": "Posts about facial recognition, predictive policing, and AI monitoring of populations."
+    }
+  },
+  "topic_counts": {
+    "ai_coding_innovations": 33323,
+    "ai_copyright_theft": 33233,
+    "ai_mass_surveillance": 33444
+  },
+  "posts_per_profile": {
+    "coding_heavy": 14300,
+    "copyright_heavy": 14300,
+    "surveillance_heavy": 14300,
+    "balanced": 14300,
+    "coding_copyright": 14300,
+    "coding_surveillance": 14300,
+    "copyright_surveillance": 14200
+  },
+  "files": {
+    "user_posts.jsonl": "One post per line (primary)",
+    "user_posts.csv": "Same flat schema as JSONL"
+  }
+}
