@@ -67,6 +67,13 @@ python scripts/plot_user_attention.py
 
 Artifacts land in [`results/topic_attention_k3/`](results/topic_attention_k3/).
 
+UMAP of the **600 library posts** colored by hard label vs soft weights
+(reuses cached `results/umap_coords.npy` when present):
+
+```bash
+python scripts/plot_cluster_umap.py
+```
+
 ### Output schema
 
 | File | Schema |
