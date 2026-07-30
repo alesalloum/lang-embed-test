@@ -81,7 +81,7 @@ python scripts/plot_cluster_umap.py
 | `centroids.npy` | `(K, d)` float32 L2-normalized centers |
 | `train_config.json` | seed, `n_clusters`, `n_init`, `tau`, `alpha`, paths, mode |
 | `post_assignments.jsonl` / `.csv` | `post_id`, `user_id`, `hard_label`, `soft_w0..w{K-1}` (+ `topic`/`language`/`source` when available) |
-| `user_attention_soft.jsonl` / `.csv` | `user_id`, `n_posts`, `w0..w{K-1}`, `assignment_type=soft` |
+| `user_attention_soft.jsonl` / `.csv` | `user_id`, `profile_id`, `profile_label`, `n_posts`, `w0..w{K-1}`, `gt_w0..gt_w{K-1}`, `assignment_type=soft`, GT topic dists |
 | `user_attention_hard.jsonl` / `.csv` | same with `assignment_type=hard` |
 | `qc_summary.json` | cluster sizes, inertia, centroid cosines, user entropy / vertex fractions, nearest posts |
 

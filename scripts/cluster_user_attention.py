@@ -48,8 +48,13 @@ Output schema
     One row per user::
 
         user_id, n_posts, w0 .. w{K-1}, assignment_type
+        [, profile_id, profile_label, topic_distribution,
+           empirical_topic_distribution, gt_w0 .. gt_w{K-1}]
 
     Weights sum to 1. ``assignment_type`` is ``soft`` or ``hard``.
+    When ``data/users.jsonl`` is available, ground-truth interest labels are
+    joined on ``user_id`` for manual checks. ``gt_w*`` are the empirical
+    topic mix remapped into cluster order (via topic→cluster bridge when used).
 
 ``qc_summary.json``
     Cluster sizes, inertia, pairwise centroid cosine, user-weight entropy
@@ -83,6 +88,7 @@ from sklearn.cluster import KMeans
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_EMB_DIR = ROOT / "data" / "embeddings" / "qwen3-embedding-0.6b"
 DEFAULT_USER_POSTS = ROOT / "data" / "user_posts.jsonl"
+DEFAULT_USERS = ROOT / "data" / "users.jsonl"
 DEFAULT_OUT_DIR = ROOT / "results" / "topic_attention_k3"
 
 
@@ -295,6 +301,71 @@ def aggregate_user_weights(
     return rows
 
 
+def load_user_ground_truth(path: Path) -> dict[str, dict]:
+    """Index users.jsonl by user_id for GT profile joins."""
+    if not path.exists():
+        return {}
+    out: dict[str, dict] = {}
+    for row in load_jsonl(path):
+        uid = row.get("user_id")
+        if uid:
+            out[uid] = row
+    return out
+
+
+def topic_to_cluster_map(bridge_info: dict[str, Any] | None) -> dict[str, int]:
+    """Map GT topic id → cluster index from topic-bridge hard means."""
+    if not bridge_info:
+        return {}
+    hard_means = bridge_info.get("topic_mean_hard") or {}
+    mapping: dict[str, int] = {}
+    for topic, vec in hard_means.items():
+        mapping[topic] = int(np.argmax(np.asarray(vec, dtype=np.float64)))
+    return mapping
+
+
+def attach_user_ground_truth(
+    rows: list[dict],
+    users_by_id: dict[str, dict],
+    topic_to_cluster: dict[str, int],
+    n_clusters: int,
+) -> list[dict]:
+    """Join profile_id / GT distributions onto attention rows."""
+    if not rows:
+        return rows
+    enriched: list[dict] = []
+    missing = 0
+    for row in rows:
+        out = dict(row)
+        gt = users_by_id.get(row["user_id"])
+        if gt is None:
+            missing += 1
+            out["profile_id"] = None
+            out["profile_label"] = None
+            out["topic_distribution"] = None
+            out["empirical_topic_distribution"] = None
+        else:
+            out["profile_id"] = gt.get("profile_id")
+            out["profile_label"] = gt.get("profile_label")
+            out["topic_distribution"] = gt.get("topic_distribution")
+            out["empirical_topic_distribution"] = gt.get(
+                "empirical_topic_distribution"
+            )
+            # Cluster-aligned GT mix for side-by-side comparison with w*.
+            emp = gt.get("empirical_topic_distribution") or {}
+            if topic_to_cluster and emp:
+                gt_w = np.zeros(n_clusters, dtype=np.float64)
+                for topic, p in emp.items():
+                    if topic in topic_to_cluster:
+                        gt_w[topic_to_cluster[topic]] += float(p)
+                for k in range(n_clusters):
+                    out[f"gt_w{k}"] = float(gt_w[k])
+        enriched.append(out)
+    if missing:
+        print(f"Warning: {missing} attention users missing from users ground truth.")
+    return enriched
+
+
 def entropy(w: np.ndarray, eps: float = 1e-12) -> float:
     p = np.clip(w, eps, 1.0)
     p = p / p.sum()
@@ -494,6 +565,13 @@ def main() -> None:
         default=DEFAULT_USER_POSTS,
         help="User posts JSONL with user_id (and topic for bridge mode). "
         "Pass an empty string to disable.",
+    )
+    parser.add_argument(
+        "--users",
+        type=Path,
+        default=DEFAULT_USERS,
+        help="Users JSONL with ground-truth profile_id / topic_distribution "
+        "joined onto attention tables. Empty string to skip.",
     )
     parser.add_argument(
         "--user-embeddings",
@@ -743,12 +821,50 @@ def main() -> None:
     write_jsonl(out_dir / "post_assignments.jsonl", post_rows)
     write_csv(out_dir / "post_assignments.csv", post_rows, post_fields)
 
+    users_path: Path | None
+    if str(args.users) in ("", "None", "none"):
+        users_path = None
+    else:
+        users_path = args.users
+    users_by_id = load_user_ground_truth(users_path) if users_path else {}
+    t2c = topic_to_cluster_map(bridge_info)
+    if users_by_id:
+        user_soft_rows = attach_user_ground_truth(
+            user_soft_rows, users_by_id, t2c, args.n_clusters
+        )
+        user_hard_rows = attach_user_ground_truth(
+            user_hard_rows, users_by_id, t2c, args.n_clusters
+        )
+        print(f"Joined ground-truth profiles from {users_path} ({len(users_by_id)} users)")
+
     w_cols = [f"w{k}" for k in range(args.n_clusters)]
-    user_fields = ["user_id", "n_posts", *w_cols, "assignment_type"]
+    gt_w_cols = [f"gt_w{k}" for k in range(args.n_clusters)]
+    user_fields = [
+        "user_id",
+        "profile_id",
+        "profile_label",
+        "n_posts",
+        *w_cols,
+        *gt_w_cols,
+        "assignment_type",
+        "topic_distribution",
+        "empirical_topic_distribution",
+    ]
+
+    def _csv_ready(rows: list[dict]) -> list[dict]:
+        out = []
+        for r in rows:
+            row = dict(r)
+            for key in ("topic_distribution", "empirical_topic_distribution"):
+                if isinstance(row.get(key), dict):
+                    row[key] = json.dumps(row[key], ensure_ascii=False)
+            out.append(row)
+        return out
+
     write_jsonl(out_dir / "user_attention_soft.jsonl", user_soft_rows)
-    write_csv(out_dir / "user_attention_soft.csv", user_soft_rows, user_fields)
+    write_csv(out_dir / "user_attention_soft.csv", _csv_ready(user_soft_rows), user_fields)
     write_jsonl(out_dir / "user_attention_hard.jsonl", user_hard_rows)
-    write_csv(out_dir / "user_attention_hard.csv", user_hard_rows, user_fields)
+    write_csv(out_dir / "user_attention_hard.csv", _csv_ready(user_hard_rows), user_fields)
 
     (out_dir / "qc_summary.json").write_text(
         json.dumps(qc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
