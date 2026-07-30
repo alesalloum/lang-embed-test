@@ -1,0 +1,29 @@
+{
+  "n_points": 600,
+  "n_clusters": 0,
+  "umap_coords": "/workspace/results/umap_coords.npy",
+  "recomputed": false,
+  "assignments": "/workspace/results/topic_attention_k3/post_assignments.jsonl",
+  "encoding": {
+    "hard": "face color = CLUSTER_COLORS[hard_label]; marker = GT topic",
+    "soft": "face color = soft_w @ CLUSTER_COLORS (RGB blend); marker = GT topic",
+    "topic_markers": {
+      "ai_coding_innovations": "o",
+      "ai_copyright_theft": "s",
+      "ai_mass_surveillance": "^"
+    },
+    "cluster_colors_rgb": []
+  },
+  "files": {
+    "umap_hard_clusters.png": "Hard-label colored UMAP",
+    "umap_soft_clusters.png": "Soft-weight RGB-blend UMAP",
+    "umap_hard_soft_clusters.png": "Side-by-side hard vs soft",
+    "umap_cluster_coords.jsonl": "UMAP x/y + hard/soft assignments"
+  },
+  "language_counts": {
+    "ar": 150,
+    "en": 150,
+    "es": 150,
+    "zh": 150
+  }
+}
