@@ -12,6 +12,7 @@ See [`data/`](data/README.md):
 - **1000 English users** with predefined interest **profiles** (ground-truth
   topic distributions) and **100 posts each** (**100_000** user posts)
 - **AI datacenter claim–stance set**: 500 claims × 3 stances (supportive/neutral/critical) under [`data/claims_stances/`](data/claims_stances/)
+- **AI datacenter polarity set**: 300 pro / 300 neutral / 300 against under [`data/polarity_posts/`](data/polarity_posts/)
 
 Regenerate multilingual posts with:
 
@@ -30,6 +31,12 @@ Regenerate AI datacenter claim–stance posts with:
 
 ```bash
 python3 scripts/generate_ai_datacenter_claims.py
+```
+
+Regenerate AI datacenter polarity posts with:
+
+```bash
+python3 scripts/generate_ai_datacenter_polarity.py
 ```
 
 User profiles (`coding_heavy`, `copyright_heavy`, `surveillance_heavy`,
@@ -60,6 +67,16 @@ Claim–stance posts are embedded twice under
 ```bash
 python scripts/embed_claim_stances.py
 ```
+Polarity posts are embedded twice under [`data/embeddings/polarity_qwen3-embedding-0.6b/`](data/embeddings/polarity_qwen3-embedding-0.6b/):
+
+- `vanilla/` — no instruction
+- `polarity_instruct/` — Instruct/Query prompt asking the model to
+  encode pro / against / neutral polarity toward AI datacenters
+
+```bash
+python scripts/embed_polarity.py
+```
+
 
 ## UMAP plot
 
@@ -77,6 +94,14 @@ stance-instruct comparison) lands in
 ```bash
 python scripts/plot_claim_stance_umap.py
 ```
+Polarity UMAP (polarity = color, aspect = marker shape; vanilla vs
+polarity-instruct comparison) lands in
+[`results/polarity_umap/`](results/polarity_umap/):
+
+```bash
+python scripts/plot_polarity_umap.py
+```
+
 
 ## Topic clustering + user attention (K=3)
 

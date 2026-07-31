@@ -161,3 +161,16 @@ python scripts/plot_claim_stance_umap.py
 UMAP plots (color = stance, shape = aspect) are in
 [`../results/claim_stance_umap/`](../results/claim_stance_umap/).
 
+## AI datacenter phenomenon-polarity set
+
+Posts labeled **pro / against / neutral toward AI datacenter expansion**
+(phenomenon polarity, not claim-agreement).
+
+See [`polarity_posts/`](polarity_posts/).
+
+```bash
+python3 scripts/generate_ai_datacenter_polarity.py
+```
+
+- **300** posts × **3** polarities = **900** English posts
+- Ground-truth label: `polarity`; secondary facet: `aspect`
