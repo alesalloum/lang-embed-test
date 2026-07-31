@@ -126,3 +126,21 @@ python3 scripts/generate_english_users.py
 ### Intended use
 
 Embed or model each user's posts, estimate a topic mixture, and compare to `topic_distribution` / `profile_id` (heavy vs balanced vs split).
+
+## AI datacenter claim–stance set
+
+Claim–stance posts for **stance embedding** tests (supportive / neutral / critical)
+on a single topic: increasing AI datacenters.
+
+See [`claims_stances/`](claims_stances/) (`claims.json` / `claims.jsonl` / `claims.csv`).
+
+Regenerate with:
+
+```bash
+python3 scripts/generate_ai_datacenter_claims.py
+```
+
+- **500** claims × **3** stances = **1500** English posts
+- Aspects: economic, environmental, infrastructure, geopolitical, local community, technological
+- Flat ground-truth label for stance separation: `stance`; shared meaning key: `claim_id`
+

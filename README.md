@@ -11,6 +11,7 @@ See [`data/`](data/README.md):
 - Parallel translations share a `post_id`
 - **1000 English users** with predefined interest **profiles** (ground-truth
   topic distributions) and **100 posts each** (**100_000** user posts)
+- **AI datacenter claim–stance set**: 500 claims × 3 stances (supportive/neutral/critical) under [`data/claims_stances/`](data/claims_stances/)
 
 Regenerate multilingual posts with:
 
@@ -23,6 +24,12 @@ Regenerate English users + their posts with:
 
 ```bash
 python3 scripts/generate_english_users.py
+```
+
+Regenerate AI datacenter claim–stance posts with:
+
+```bash
+python3 scripts/generate_ai_datacenter_claims.py
 ```
 
 User profiles (`coding_heavy`, `copyright_heavy`, `surveillance_heavy`,
