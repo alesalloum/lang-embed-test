@@ -148,3 +148,19 @@ With default `--user-posts data/user_posts.jsonl` and no `--user-embeddings`,
 user posts inherit mean cluster weights of English library posts that share
 the same ground-truth `topic` (topic bridge). Pass `--user-embeddings` aligned
 with `--user-posts` for direct embedding assignment when those vectors exist.
+
+## NMF latent-profile rank selection
+
+Build a finer microtopic attention matrix (`K=20`), then fit KL-NMF for
+`k = 1..10` and choose the elbow from deviance-explained / perplexity curves:
+
+```bash
+python scripts/cluster_user_attention.py --n-clusters 20 --out-dir results/topic_attention_k20
+python scripts/nmf_latent_profiles.py \
+  --attention-csv results/topic_attention_k20/user_attention_soft.csv \
+  --out-dir results/nmf_latent_profiles --k-max 10
+```
+
+Artifacts land in [`results/nmf_latent_profiles/`](results/nmf_latent_profiles/).
+On the current topic-bridge attention data the elbow is **k = 3** (~100% KL
+deviance explained), matching the three ground-truth topics.
