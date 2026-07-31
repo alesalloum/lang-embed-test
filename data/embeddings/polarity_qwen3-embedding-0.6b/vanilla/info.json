@@ -1,0 +1,31 @@
+{
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "mode": "vanilla",
+  "created_at": "2026-07-31T05:34:50.165606+00:00",
+  "input": "data/polarity_posts/posts.jsonl",
+  "n_records": 900,
+  "embedding_dim": 1024,
+  "dtype": "float32",
+  "normalized": true,
+  "prompt": null,
+  "task_instruction": null,
+  "notes": "Vanilla = document embeddings with no instruction. polarity_instruct = Qwen Instruct/Query prefix asking the model to encode pro vs against vs neutral polarity toward AI datacenter expansion. Row i in embeddings.npy matches metadata.jsonl / ids.json index i.",
+  "files": {
+    "embeddings.npy": "shape (900, 1024) float32",
+    "metadata.jsonl": "One JSON object per row, includes full text",
+    "ids.json": "Compact index/post_id/aspect/polarity for each row"
+  },
+  "polarities": [
+    "against",
+    "neutral",
+    "pro"
+  ],
+  "aspects": [
+    "economic",
+    "environmental",
+    "geopolitical",
+    "infrastructure",
+    "local_community",
+    "technological"
+  ]
+}

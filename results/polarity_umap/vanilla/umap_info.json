@@ -1,0 +1,57 @@
+{
+  "mode": "vanilla",
+  "method": "UMAP",
+  "n_neighbors": 15,
+  "min_dist": 0.1,
+  "metric": "cosine",
+  "random_state": 42,
+  "n_points": 900,
+  "embedding_source": "data/embeddings/polarity_qwen3-embedding-0.6b/vanilla",
+  "encoding": {
+    "polarity_colors": {
+      "pro": "#2ca02c",
+      "against": "#d62728",
+      "neutral": "#7f7f7f"
+    },
+    "aspect_markers": {
+      "economic": "o",
+      "environmental": "s",
+      "infrastructure": "^",
+      "geopolitical": "D",
+      "local_community": "v",
+      "technological": "P"
+    }
+  },
+  "polarity_separation": {
+    "polarities": [
+      "against",
+      "neutral",
+      "pro"
+    ],
+    "silhouette_cosine": 0.07226518541574478,
+    "nearest_centroid_accuracy": 0.9911111111111112,
+    "centroid_cosine": {
+      "against__neutral": 0.9365310668945312,
+      "against__pro": 0.9184142351150513,
+      "neutral__pro": 0.9002298712730408
+    }
+  },
+  "aspect_separation": {
+    "aspects": [
+      "economic",
+      "environmental",
+      "geopolitical",
+      "infrastructure",
+      "local_community",
+      "technological"
+    ],
+    "silhouette_cosine": -0.004358428996056318,
+    "nearest_centroid_accuracy": 0.6188888888888889
+  },
+  "files": {
+    "umap_scatter.png": "2D scatter (PNG)",
+    "umap_scatter.pdf": "2D scatter (PDF)",
+    "umap_coords.npy": "(n, 2) float32",
+    "umap_coords.jsonl": "Coordinates + polarity/aspect"
+  }
+}
