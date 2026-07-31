@@ -144,3 +144,20 @@ python3 scripts/generate_ai_datacenter_claims.py
 - Aspects: economic, environmental, infrastructure, geopolitical, local community, technological
 - Flat ground-truth label for stance separation: `stance`; shared meaning key: `claim_id`
 
+### Embeddings + UMAP
+
+Precomputed under [`embeddings/claims_stances_qwen3-embedding-0.6b/`](embeddings/claims_stances_qwen3-embedding-0.6b/):
+
+| Mode | Path | Prompt |
+| --- | --- | --- |
+| vanilla | `vanilla/` | none (document mode) |
+| stance_instruct | `stance_instruct/` | Instruct to encode supportive/critical/neutral |
+
+```bash
+python scripts/embed_claim_stances.py
+python scripts/plot_claim_stance_umap.py
+```
+
+UMAP plots (color = stance, shape = aspect) are in
+[`../results/claim_stance_umap/`](../results/claim_stance_umap/).
+
