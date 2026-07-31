@@ -50,6 +50,17 @@ pip install -r requirements.txt
 python scripts/embed_posts.py
 ```
 
+Claim–stance posts are embedded twice under
+[`data/embeddings/claims_stances_qwen3-embedding-0.6b/`](data/embeddings/claims_stances_qwen3-embedding-0.6b/):
+
+- `vanilla/` — no instruction
+- `stance_instruct/` — Instruct/Query prompt asking the model to encode
+  supportive / critical / neutral stance
+
+```bash
+python scripts/embed_claim_stances.py
+```
+
 ## UMAP plot
 
 2D UMAP scatter (topic = marker shape, language = color) is written to
@@ -57,6 +68,14 @@ python scripts/embed_posts.py
 
 ```bash
 python scripts/plot_umap.py
+```
+
+Claim–stance UMAP (stance = color, aspect = marker shape; vanilla vs
+stance-instruct comparison) lands in
+[`results/claim_stance_umap/`](results/claim_stance_umap/):
+
+```bash
+python scripts/plot_claim_stance_umap.py
 ```
 
 ## Topic clustering + user attention (K=3)
