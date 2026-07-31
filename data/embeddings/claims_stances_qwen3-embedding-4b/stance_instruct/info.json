@@ -1,0 +1,31 @@
+{
+  "model": "Qwen/Qwen3-Embedding-4B",
+  "mode": "stance_instruct",
+  "created_at": "2026-07-31T05:44:23.451206+00:00",
+  "input": "data/claims_stances/claims.jsonl",
+  "n_records": 1500,
+  "embedding_dim": 2560,
+  "dtype": "float32",
+  "normalized": true,
+  "prompt": "Instruct: Identify the attitudinal stance of the social media post toward a claim about increasing AI datacenters as supportive, critical, or neutral; encode that stance as the primary semantic signal while preserving topic content.\nQuery:",
+  "task_instruction": "Identify the attitudinal stance of the social media post toward a claim about increasing AI datacenters as supportive, critical, or neutral; encode that stance as the primary semantic signal while preserving topic content.",
+  "notes": "Vanilla = document embeddings with no instruction. stance_instruct = Qwen Instruct/Query prefix asking the model to encode supportive vs critical vs neutral stance. Row i in embeddings.npy matches metadata.jsonl / ids.json index i.",
+  "files": {
+    "embeddings.npy": "shape (1500, 2560) float32",
+    "metadata.jsonl": "One JSON object per row, includes full text + claim",
+    "ids.json": "Compact index/post_id/claim_id/aspect/stance for each row"
+  },
+  "stances": [
+    "critical",
+    "neutral",
+    "supportive"
+  ],
+  "aspects": [
+    "economic",
+    "environmental",
+    "geopolitical",
+    "infrastructure",
+    "local_community",
+    "technological"
+  ]
+}

@@ -217,6 +217,7 @@ def save_mode_outputs(
     seed: int,
     n_neighbors: int,
     min_dist: float,
+    model_label: str,
 ) -> Path:
     mode_dir = out_dir / mode
     mode_dir.mkdir(parents=True, exist_ok=True)
@@ -249,7 +250,7 @@ def save_mode_outputs(
         coords,
         stances,
         aspects,
-        title=f"Qwen3-Embedding-0.6B — {MODE_TITLES.get(mode, mode)}",
+        title=f"{model_label} — {MODE_TITLES.get(mode, mode)}",
     )
     # Annotate silhouette on the figure
     sil = metrics.get("silhouette_cosine")
@@ -280,7 +281,8 @@ def save_mode_outputs(
         "metric": "cosine",
         "random_state": seed,
         "n_points": int(coords.shape[0]),
-        "embedding_source": str(emb_dir.relative_to(ROOT)),
+        "embedding_source": str(emb_dir.resolve().relative_to(ROOT)),
+        "model_label": model_label,
         "encoding": {
             "stance_colors": STANCE_COLORS,
             "aspect_markers": ASPECT_MARKERS,
@@ -300,10 +302,37 @@ def save_mode_outputs(
     return png_path
 
 
+def infer_model_label(emb_root: Path) -> str:
+    for mode in ("vanilla", "stance_instruct"):
+        info_path = emb_root / mode / "info.json"
+        if info_path.exists():
+            info = json.loads(info_path.read_text(encoding="utf-8"))
+            model = info.get("model")
+            if model:
+                return str(model).split("/")[-1]
+    # Fallback from directory name: claims_stances_qwen3-embedding-4b
+    name = emb_root.name
+    if name.startswith("claims_stances_"):
+        slug = name[len("claims_stances_") :]
+        parts = slug.split("-")
+        return "-".join(p.upper() if p in {"qwen3"} else p for p in parts)
+    return name
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--emb-root", type=Path, default=DEFAULT_EMB_ROOT)
-    parser.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR)
+    parser.add_argument(
+        "--out-dir",
+        type=Path,
+        default=None,
+        help="Output dir (default: results/claim_stance_umap or …_<model-slug>).",
+    )
+    parser.add_argument(
+        "--model-label",
+        default=None,
+        help="Label used in plot titles (default: inferred from embeddings info.json).",
+    )
     parser.add_argument(
         "--modes",
         nargs="+",
@@ -313,6 +342,17 @@ def main() -> None:
     parser.add_argument("--n-neighbors", type=int, default=15)
     parser.add_argument("--min-dist", type=float, default=0.1)
     args = parser.parse_args()
+
+    model_label = args.model_label or infer_model_label(args.emb_root)
+    if args.out_dir is None:
+        if args.emb_root.resolve() == DEFAULT_EMB_ROOT.resolve():
+            args.out_dir = DEFAULT_OUT_DIR
+        else:
+            slug = args.emb_root.name.replace("claims_stances_", "")
+            if slug and slug != args.emb_root.name:
+                args.out_dir = ROOT / "results" / f"claim_stance_umap_{slug}"
+            else:
+                args.out_dir = DEFAULT_OUT_DIR
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
     mode_coords: dict[str, np.ndarray] = {}
@@ -356,6 +396,7 @@ def main() -> None:
             args.seed,
             args.n_neighbors,
             args.min_dist,
+            model_label,
         )
         mode_coords[mode] = coords
         mode_ids[mode] = ids
@@ -393,7 +434,8 @@ def main() -> None:
                     ),
                 )
         fig.suptitle(
-            "AI datacenter claim–stance posts — UMAP (color=stance, shape=aspect)",
+            f"{model_label} — AI datacenter claim–stance UMAP "
+            "(color=stance, shape=aspect)",
             fontsize=13,
             y=1.02,
         )
@@ -406,7 +448,8 @@ def main() -> None:
         print(f"[compare] plot -> {cmp_png}")
 
     summary = {
-        "embedding_root": str(args.emb_root.relative_to(ROOT)),
+        "model_label": model_label,
+        "embedding_root": str(args.emb_root.resolve().relative_to(ROOT)),
         "modes": args.modes,
         "n_neighbors": args.n_neighbors,
         "min_dist": args.min_dist,
@@ -428,9 +471,9 @@ def main() -> None:
     (args.out_dir / "README.md").write_text(
         "\n".join(
             [
-                "# Claim–stance UMAP plots",
+                f"# Claim–stance UMAP plots ({model_label})",
                 "",
-                "Qwen3-Embedding-0.6B projections of the AI-datacenter claim–stance set.",
+                f"{model_label} projections of the AI-datacenter claim–stance set.",
                 "",
                 "## Encoding",
                 "",
@@ -450,8 +493,8 @@ def main() -> None:
                 "embedding space (not UMAP).",
                 "",
                 "```bash",
-                "python scripts/embed_claim_stances.py",
-                "python scripts/plot_claim_stance_umap.py",
+                f"python scripts/embed_claim_stances.py --model <model-id>",
+                f"python scripts/plot_claim_stance_umap.py --emb-root {args.emb_root.resolve().relative_to(ROOT)}",
                 "```",
                 "",
                 "```json",

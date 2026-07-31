@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Embed AI-datacenter claim–stance posts with Qwen3-Embedding-0.6B.
+"""Embed AI-datacenter claim–stance posts with a Qwen3 Embedding model.
 
 Produces two embedding runs for comparison:
 
@@ -7,27 +7,37 @@ Produces two embedding runs for comparison:
 2. **stance_instruct** — Qwen instruction format that asks the model to
    encode attitudinal stance (supportive / critical / neutral)
 
-Outputs land under::
+Default model is ``Qwen/Qwen3-Embedding-0.6B``. Pass ``--model`` for larger
+variants (e.g. ``Qwen/Qwen3-Embedding-4B``). Outputs land under::
 
-    data/embeddings/claims_stances_qwen3-embedding-0.6b/{vanilla,stance_instruct}/
+    data/embeddings/claims_stances_<model-slug>/{vanilla,stance_instruct}/
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
 import numpy as np
+import torch
 from sentence_transformers import SentenceTransformer
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INPUT = ROOT / "data" / "claims_stances" / "claims.jsonl"
-DEFAULT_OUT_ROOT = (
-    ROOT / "data" / "embeddings" / "claims_stances_qwen3-embedding-0.6b"
-)
 MODEL_ID = "Qwen/Qwen3-Embedding-0.6B"
+
+
+def model_slug(model_id: str) -> str:
+    """Qwen/Qwen3-Embedding-4B -> qwen3-embedding-4b"""
+    name = model_id.split("/")[-1].lower()
+    return re.sub(r"[^a-z0-9]+", "-", name).strip("-")
+
+
+def default_out_root(model_id: str) -> Path:
+    return ROOT / "data" / "embeddings" / f"claims_stances_{model_slug(model_id)}"
 
 # Custom task instruction for the stance-aware run (English, per Qwen guidance).
 STANCE_TASK = (
@@ -49,9 +59,25 @@ def load_records(path: Path) -> list[dict]:
     return records
 
 
-def load_model(model_id: str, device: str | None) -> SentenceTransformer:
+def load_model(
+    model_id: str,
+    device: str | None,
+    dtype: str | None,
+) -> SentenceTransformer:
+    model_kwargs: dict = {}
+    if dtype:
+        dtype_map = {
+            "float16": torch.float16,
+            "bfloat16": torch.bfloat16,
+            "float32": torch.float32,
+        }
+        if dtype not in dtype_map:
+            raise SystemExit(f"Unsupported --dtype {dtype!r}")
+        model_kwargs["torch_dtype"] = dtype_map[dtype]
+
     load_kwargs: dict = {
         "processor_kwargs": {"padding_side": "left"},
+        "model_kwargs": model_kwargs,
     }
     if device:
         load_kwargs["device"] = device
@@ -202,10 +228,21 @@ def write_run(
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
-    parser.add_argument("--out-root", type=Path, default=DEFAULT_OUT_ROOT)
+    parser.add_argument(
+        "--out-root",
+        type=Path,
+        default=None,
+        help="Output root (default: data/embeddings/claims_stances_<model-slug>/).",
+    )
     parser.add_argument("--model", default=MODEL_ID)
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--device", default=None)
+    parser.add_argument(
+        "--dtype",
+        default=None,
+        choices=("float16", "bfloat16", "float32"),
+        help="Optional torch dtype for model weights (use float16 for larger models on CPU).",
+    )
     parser.add_argument(
         "--modes",
         nargs="+",
@@ -219,12 +256,14 @@ def main() -> None:
         help="Task instruction used for stance_instruct mode.",
     )
     args = parser.parse_args()
+    if args.out_root is None:
+        args.out_root = default_out_root(args.model)
 
     records = load_records(args.input)
     texts = [r["text"] for r in records]
     print(f"Loaded {len(records)} texts from {args.input}")
-    print(f"Loading model {args.model!r} …")
-    model = load_model(args.model, args.device)
+    print(f"Loading model {args.model!r} (dtype={args.dtype}) …")
+    model = load_model(args.model, args.device, args.dtype)
 
     modes = {
         "vanilla": {
@@ -262,6 +301,7 @@ def main() -> None:
 
     summary = {
         "model": args.model,
+        "dtype": args.dtype,
         "input": str(args.input.relative_to(ROOT)),
         "modes": list(args.modes),
         "n_records": len(records),
@@ -269,10 +309,11 @@ def main() -> None:
         "stance_task": args.task,
     }
     args.out_root.mkdir(parents=True, exist_ok=True)
+    short = args.model.split("/")[-1]
     (args.out_root / "README.md").write_text(
         "\n".join(
             [
-                "# Claim–stance embeddings (Qwen3-Embedding-0.6B)",
+                f"# Claim–stance embeddings ({short})",
                 "",
                 "Two embedding runs over `data/claims_stances/claims.jsonl`:",
                 "",
@@ -284,7 +325,8 @@ def main() -> None:
                 "Regenerate:",
                 "",
                 "```bash",
-                "python scripts/embed_claim_stances.py",
+                f"python scripts/embed_claim_stances.py --model {args.model}"
+                + (f" --dtype {args.dtype}" if args.dtype else ""),
                 "```",
                 "",
                 "```json",

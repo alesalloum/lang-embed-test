@@ -57,8 +57,10 @@ pip install -r requirements.txt
 python scripts/embed_posts.py
 ```
 
-Claim–stance posts are embedded twice under
-[`data/embeddings/claims_stances_qwen3-embedding-0.6b/`](data/embeddings/claims_stances_qwen3-embedding-0.6b/):
+Claim–stance posts are embedded under
+[`data/embeddings/claims_stances_qwen3-embedding-0.6b/`](data/embeddings/claims_stances_qwen3-embedding-0.6b/)
+and
+[`data/embeddings/claims_stances_qwen3-embedding-4b/`](data/embeddings/claims_stances_qwen3-embedding-4b/):
 
 - `vanilla/` — no instruction
 - `stance_instruct/` — Instruct/Query prompt asking the model to encode
@@ -66,6 +68,7 @@ Claim–stance posts are embedded twice under
 
 ```bash
 python scripts/embed_claim_stances.py
+python scripts/embed_claim_stances.py --model Qwen/Qwen3-Embedding-4B --dtype float16 --batch-size 4
 ```
 Polarity posts are embedded twice under [`data/embeddings/polarity_qwen3-embedding-0.6b/`](data/embeddings/polarity_qwen3-embedding-0.6b/):
 
@@ -88,11 +91,15 @@ python scripts/plot_umap.py
 ```
 
 Claim–stance UMAP (stance = color, aspect = marker shape; vanilla vs
-stance-instruct comparison) lands in
-[`results/claim_stance_umap/`](results/claim_stance_umap/):
+stance-instruct) lands in
+[`results/claim_stance_umap/`](results/claim_stance_umap/) (0.6B) and
+[`results/claim_stance_umap_qwen3-embedding-4b/`](results/claim_stance_umap_qwen3-embedding-4b/)
+(4B). Cross-size comparison:
 
 ```bash
 python scripts/plot_claim_stance_umap.py
+python scripts/plot_claim_stance_umap.py --emb-root data/embeddings/claims_stances_qwen3-embedding-4b
+python scripts/plot_claim_stance_model_compare.py
 ```
 Polarity UMAP (polarity = color, aspect = marker shape; vanilla vs
 polarity-instruct comparison) lands in
