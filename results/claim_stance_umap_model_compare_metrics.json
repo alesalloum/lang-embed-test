@@ -1,0 +1,45 @@
+{
+  "panels": [
+    {
+      "panel": "0.6B \u00b7 vanilla",
+      "silhouette_cosine": 0.015408582054078579,
+      "nearest_centroid_accuracy": 0.9086666666666666,
+      "centroid_cosine": {
+        "critical__neutral": 0.9659225940704346,
+        "critical__supportive": 0.9625169634819031,
+        "neutral__supportive": 0.9670848250389099
+      }
+    },
+    {
+      "panel": "0.6B \u00b7 stance-instruct",
+      "silhouette_cosine": 0.27057015895843506,
+      "nearest_centroid_accuracy": 0.978,
+      "centroid_cosine": {
+        "critical__neutral": 0.8889997005462646,
+        "critical__supportive": 0.8841314315795898,
+        "neutral__supportive": 0.9035146236419678
+      }
+    },
+    {
+      "panel": "4B \u00b7 vanilla",
+      "silhouette_cosine": 0.022412169724702835,
+      "nearest_centroid_accuracy": 0.8926666666666667,
+      "centroid_cosine": {
+        "critical__neutral": 0.9607948064804077,
+        "critical__supportive": 0.9448055028915405,
+        "neutral__supportive": 0.9604377746582031
+      }
+    },
+    {
+      "panel": "4B \u00b7 stance-instruct",
+      "silhouette_cosine": 0.6335034370422363,
+      "nearest_centroid_accuracy": 0.996,
+      "centroid_cosine": {
+        "critical__neutral": 0.8181226253509521,
+        "critical__supportive": 0.8127896785736084,
+        "neutral__supportive": 0.8406574130058289
+      }
+    }
+  ],
+  "figure": "results/claim_stance_umap_model_compare.png"
+}

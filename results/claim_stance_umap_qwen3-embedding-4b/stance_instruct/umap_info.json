@@ -1,0 +1,46 @@
+{
+  "mode": "stance_instruct",
+  "method": "UMAP",
+  "n_neighbors": 15,
+  "min_dist": 0.1,
+  "metric": "cosine",
+  "random_state": 42,
+  "n_points": 1500,
+  "embedding_source": "data/embeddings/claims_stances_qwen3-embedding-4b/stance_instruct",
+  "model_label": "Qwen3-Embedding-4B",
+  "encoding": {
+    "stance_colors": {
+      "supportive": "#2ca02c",
+      "critical": "#d62728",
+      "neutral": "#7f7f7f"
+    },
+    "aspect_markers": {
+      "economic": "o",
+      "environmental": "s",
+      "infrastructure": "^",
+      "geopolitical": "D",
+      "local_community": "v",
+      "technological": "P"
+    }
+  },
+  "stance_separation": {
+    "stances": [
+      "critical",
+      "neutral",
+      "supportive"
+    ],
+    "silhouette_cosine": 0.6335034370422363,
+    "nearest_centroid_accuracy": 0.996,
+    "centroid_cosine": {
+      "critical__neutral": 0.8181226253509521,
+      "critical__supportive": 0.8127896785736084,
+      "neutral__supportive": 0.8406574130058289
+    }
+  },
+  "files": {
+    "umap_scatter.png": "2D scatter (PNG)",
+    "umap_scatter.pdf": "2D scatter (PDF)",
+    "umap_coords.npy": "(n, 2) float32",
+    "umap_coords.jsonl": "Coordinates + claim/stance/aspect"
+  }
+}

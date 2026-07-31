@@ -146,18 +146,26 @@ python3 scripts/generate_ai_datacenter_claims.py
 
 ### Embeddings + UMAP
 
-Precomputed under [`embeddings/claims_stances_qwen3-embedding-0.6b/`](embeddings/claims_stances_qwen3-embedding-0.6b/):
+Precomputed for **0.6B** and **4B**:
 
-| Mode | Path | Prompt |
-| --- | --- | --- |
-| vanilla | `vanilla/` | none (document mode) |
-| stance_instruct | `stance_instruct/` | Instruct to encode supportive/critical/neutral |
+| Model | Path |
+| --- | --- |
+| Qwen3-Embedding-0.6B | [`embeddings/claims_stances_qwen3-embedding-0.6b/`](embeddings/claims_stances_qwen3-embedding-0.6b/) |
+| Qwen3-Embedding-4B | [`embeddings/claims_stances_qwen3-embedding-4b/`](embeddings/claims_stances_qwen3-embedding-4b/) |
+
+Each has `vanilla/` (no instruction) and `stance_instruct/`.
 
 ```bash
 python scripts/embed_claim_stances.py
+python scripts/embed_claim_stances.py --model Qwen/Qwen3-Embedding-4B --dtype float16 --batch-size 4
 python scripts/plot_claim_stance_umap.py
+python scripts/plot_claim_stance_umap.py --emb-root data/embeddings/claims_stances_qwen3-embedding-4b
+python scripts/plot_claim_stance_model_compare.py
 ```
 
 UMAP plots (color = stance, shape = aspect) are in
-[`../results/claim_stance_umap/`](../results/claim_stance_umap/).
+[`../results/claim_stance_umap/`](../results/claim_stance_umap/),
+[`../results/claim_stance_umap_qwen3-embedding-4b/`](../results/claim_stance_umap_qwen3-embedding-4b/),
+and the 2×2 model-size compare
+[`../results/claim_stance_umap_model_compare.png`](../results/claim_stance_umap_model_compare.png).
 

@@ -281,7 +281,7 @@ def save_mode_outputs(
         "metric": "cosine",
         "random_state": seed,
         "n_points": int(coords.shape[0]),
-        "embedding_source": str(emb_dir.relative_to(ROOT)),
+        "embedding_source": str(emb_dir.resolve().relative_to(ROOT)),
         "model_label": model_label,
         "encoding": {
             "stance_colors": STANCE_COLORS,
@@ -449,7 +449,7 @@ def main() -> None:
 
     summary = {
         "model_label": model_label,
-        "embedding_root": str(args.emb_root.relative_to(ROOT)),
+        "embedding_root": str(args.emb_root.resolve().relative_to(ROOT)),
         "modes": args.modes,
         "n_neighbors": args.n_neighbors,
         "min_dist": args.min_dist,
@@ -494,7 +494,7 @@ def main() -> None:
                 "",
                 "```bash",
                 f"python scripts/embed_claim_stances.py --model <model-id>",
-                f"python scripts/plot_claim_stance_umap.py --emb-root {args.emb_root.relative_to(ROOT)}",
+                f"python scripts/plot_claim_stance_umap.py --emb-root {args.emb_root.resolve().relative_to(ROOT)}",
                 "```",
                 "",
                 "```json",
