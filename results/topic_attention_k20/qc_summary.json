@@ -1,0 +1,1525 @@
+{
+  "created_at": "2026-07-31T06:44:07.310303+00:00",
+  "mode": "topic_bridge",
+  "n_posts_clustered": 600,
+  "n_fit": 600,
+  "embedding_dim": 1024,
+  "n_clusters": 20,
+  "inertia": 370.2518084264226,
+  "sklearn_inertia_fit_subset": 312.6139831542969,
+  "cluster_sizes": {
+    "0": 42,
+    "1": 30,
+    "2": 13,
+    "3": 12,
+    "4": 35,
+    "5": 17,
+    "6": 37,
+    "7": 37,
+    "8": 37,
+    "9": 30,
+    "10": 16,
+    "11": 42,
+    "12": 20,
+    "13": 35,
+    "14": 28,
+    "15": 32,
+    "16": 31,
+    "17": 63,
+    "18": 34,
+    "19": 9
+  },
+  "pairwise_centroid_cosine": [
+    [
+      0.9999999935508203,
+      0.5585032969631203,
+      0.5634690346038258,
+      0.6620051033975132,
+      0.6342602202742853,
+      0.5318568351081212,
+      0.6075974348702413,
+      0.7583729155651224,
+      0.6282868929364649,
+      0.6434035735818409,
+      0.5671009606362589,
+      0.660246029592755,
+      0.5352361675579429,
+      0.7823749899236483,
+      0.5524271802260279,
+      0.6715961520715735,
+      0.5445248981181678,
+      0.8338671346608575,
+      0.5979350592634332,
+      0.5894422396139256
+    ],
+    [
+      0.5585032969631203,
+      1.0000000039028616,
+      0.5243429805366846,
+      0.5210129937590945,
+      0.6136115275173947,
+      0.7118720562000709,
+      0.6391411211951922,
+      0.7164595996593262,
+      0.8232327608453065,
+      0.6098475308203604,
+      0.5094776185859244,
+      0.5837693082650496,
+      0.8212141884755035,
+      0.555106080861239,
+      0.8338047391429304,
+      0.580034343385537,
+      0.8210392861074136,
+      0.7410450664713293,
+      0.7926189998570131,
+      0.44204668584468
+    ],
+    [
+      0.5634690346038258,
+      0.5243429805366846,
+      0.999999998530271,
+      0.4026889524644227,
+      0.7708979727926788,
+      0.4812171388806819,
+      0.7567112445644077,
+      0.6751122023715268,
+      0.5402671773807104,
+      0.7365312524073124,
+      0.6035347532750378,
+      0.7316646448034303,
+      0.5050767125713873,
+      0.5811614189867707,
+      0.5774426191291617,
+      0.6981027767476027,
+      0.6226587273966077,
+      0.6021760350652503,
+      0.6660829465920313,
+      0.668448670758374
+    ],
+    [
+      0.6620051033975132,
+      0.5210129937590945,
+      0.4026889524644227,
+      0.9999999969722404,
+      0.4843603878371935,
+      0.49536382349691566,
+      0.4572764218418951,
+      0.6018417877000799,
+      0.5620967446277643,
+      0.45403733270334734,
+      0.4094348138608863,
+      0.4825590748670855,
+      0.5000515759494295,
+      0.6180121556970256,
+      0.5567548661790807,
+      0.4923200169767643,
+      0.5016684635718053,
+      0.6960430345915097,
+      0.5405134498431261,
+      0.45414023859063346
+    ],
+    [
+      0.6342602202742853,
+      0.6136115275173947,
+      0.7708979727926788,
+      0.4843603878371935,
+      1.0000000005939378,
+      0.5312694280782613,
+      0.7790558174096819,
+      0.7771199870586666,
+      0.6127707269822784,
+      0.8213510880949798,
+      0.6433454484198375,
+      0.7450108838673959,
+      0.5846620839608505,
+      0.7506286744734265,
+      0.6726702688586563,
+      0.6602424326236047,
+      0.7208265199135935,
+      0.6457224920179355,
+      0.8364157183939217,
+      0.5712395367456065
+    ],
+    [
+      0.5318568351081212,
+      0.7118720562000709,
+      0.4812171388806819,
+      0.49536382349691566,
+      0.5312694280782613,
+      0.9999999963617767,
+      0.5950341292589205,
+      0.5461739487926192,
+      0.7378472758660263,
+      0.5712780258433354,
+      0.5966600883064426,
+      0.6388577769673529,
+      0.7399383951574018,
+      0.4973142951896609,
+      0.7119746151451726,
+      0.619880930021244,
+      0.7014194931130219,
+      0.6118598491582015,
+      0.7031310619438411,
+      0.4503723171579961
+    ],
+    [
+      0.6075974348702413,
+      0.6391411211951922,
+      0.7567112445644077,
+      0.4572764218418951,
+      0.7790558174096819,
+      0.5950341292589205,
+      0.9999999952854416,
+      0.693018476525366,
+      0.6908688357593706,
+      0.8419293454703447,
+      0.7014035511163135,
+      0.8182322924165493,
+      0.6404345695680993,
+      0.5621360029670783,
+      0.6874792898520361,
+      0.7407651168364316,
+      0.6768679938114941,
+      0.7077063062303326,
+      0.706212496749933,
+      0.6362088605313707
+    ],
+    [
+      0.7583729155651224,
+      0.7164595996593262,
+      0.6751122023715268,
+      0.6018417877000799,
+      0.7771199870586666,
+      0.5461739487926192,
+      0.693018476525366,
+      1.0000000034152055,
+      0.7120950059506105,
+      0.669748222402095,
+      0.5599361616714447,
+      0.6586991489942692,
+      0.6369677598167718,
+      0.794086430160901,
+      0.686676521888839,
+      0.6378197250159829,
+      0.7324254282626261,
+      0.8445100753755845,
+      0.7895422347938639,
+      0.5588257861134207
+    ],
+    [
+      0.6282868929364649,
+      0.8232327608453065,
+      0.5402671773807104,
+      0.5620967446277643,
+      0.6127707269822784,
+      0.7378472758660263,
+      0.6908688357593706,
+      0.7120950059506105,
+      1.0000000001752416,
+      0.628168517090944,
+      0.6120005280051556,
+      0.6776174402986564,
+      0.8450066189889758,
+      0.5779669285310352,
+      0.8190990545203374,
+      0.6729475720181408,
+      0.7956667222273082,
+      0.7743149369777097,
+      0.7808565494155416,
+      0.535149223326854
+    ],
+    [
+      0.6434035735818409,
+      0.6098475308203604,
+      0.7365312524073124,
+      0.45403733270334734,
+      0.8213510880949798,
+      0.5712780258433354,
+      0.8419293454703447,
+      0.669748222402095,
+      0.628168517090944,
+      1.000000003880528,
+      0.6967573303904273,
+      0.8116931701557049,
+      0.6104785365504392,
+      0.6035953172684255,
+      0.6840045050567325,
+      0.7242565595061068,
+      0.690666537718051,
+      0.6960876401630209,
+      0.679737875596347,
+      0.5931298564886023
+    ],
+    [
+      0.5671009606362589,
+      0.5094776185859244,
+      0.6035347532750378,
+      0.4094348138608863,
+      0.6433454484198375,
+      0.5966600883064426,
+      0.7014035511163135,
+      0.5599361616714447,
+      0.6120005280051556,
+      0.6967573303904273,
+      1.0000000012413621,
+      0.7086870035297173,
+      0.5769945580855629,
+      0.5059142114363406,
+      0.5111823065186647,
+      0.6965510776431989,
+      0.5847231066853316,
+      0.563704035067547,
+      0.586569676452368,
+      0.6755190869654623
+    ],
+    [
+      0.660246029592755,
+      0.5837693082650496,
+      0.7316646448034303,
+      0.4825590748670855,
+      0.7450108838673959,
+      0.6388577769673529,
+      0.8182322924165493,
+      0.6586991489942692,
+      0.6776174402986564,
+      0.8116931701557049,
+      0.7086870035297173,
+      1.000000002971302,
+      0.6310567115071587,
+      0.5911151388440741,
+      0.650188763122254,
+      0.8231956771012237,
+      0.654107919614097,
+      0.6645109259272806,
+      0.6999144384589729,
+      0.6401244696878927
+    ],
+    [
+      0.5352361675579429,
+      0.8212141884755035,
+      0.5050767125713873,
+      0.5000515759494295,
+      0.5846620839608505,
+      0.7399383951574018,
+      0.6404345695680993,
+      0.6369677598167718,
+      0.8450066189889758,
+      0.6104785365504392,
+      0.5769945580855629,
+      0.6310567115071587,
+      1.0000000016366295,
+      0.5361393619708279,
+      0.7906068073679041,
+      0.5964855456308499,
+      0.8054641821051246,
+      0.6918488979534883,
+      0.7609309614467485,
+      0.447098332834156
+    ],
+    [
+      0.7823749899236483,
+      0.555106080861239,
+      0.5811614189867707,
+      0.6180121556970256,
+      0.7506286744734265,
+      0.4973142951896609,
+      0.5621360029670783,
+      0.794086430160901,
+      0.5779669285310352,
+      0.6035953172684255,
+      0.5059142114363406,
+      0.5911151388440741,
+      0.5361393619708279,
+      1.0000000006510559,
+      0.5746652684273446,
+      0.5691337940857669,
+      0.5968151212011297,
+      0.7941328092134323,
+      0.7172429461208674,
+      0.5024989469058446
+    ],
+    [
+      0.5524271802260279,
+      0.8338047391429304,
+      0.5774426191291617,
+      0.5567548661790807,
+      0.6726702688586563,
+      0.7119746151451726,
+      0.6874792898520361,
+      0.686676521888839,
+      0.8190990545203374,
+      0.6840045050567325,
+      0.5111823065186647,
+      0.650188763122254,
+      0.7906068073679041,
+      0.5746652684273446,
+      0.999999995660951,
+      0.6114518594521674,
+      0.7818562320508107,
+      0.7342439961545402,
+      0.8065475870941773,
+      0.4408873502411331
+    ],
+    [
+      0.6715961520715735,
+      0.580034343385537,
+      0.6981027767476027,
+      0.4923200169767643,
+      0.6602424326236047,
+      0.619880930021244,
+      0.7407651168364316,
+      0.6378197250159829,
+      0.6729475720181408,
+      0.7242565595061068,
+      0.6965510776431989,
+      0.8231956771012237,
+      0.5964855456308499,
+      0.5691337940857669,
+      0.6114518594521674,
+      1.0000000034141183,
+      0.5907182746521392,
+      0.68060871695114,
+      0.6386307109278416,
+      0.6786525722585361
+    ],
+    [
+      0.5445248981181678,
+      0.8210392861074136,
+      0.6226587273966077,
+      0.5016684635718053,
+      0.7208265199135935,
+      0.7014194931130219,
+      0.6768679938114941,
+      0.7324254282626261,
+      0.7956667222273082,
+      0.690666537718051,
+      0.5847231066853316,
+      0.654107919614097,
+      0.8054641821051246,
+      0.5968151212011297,
+      0.7818562320508107,
+      0.5907182746521392,
+      0.9999999968515123,
+      0.7113391510682083,
+      0.8269828776595258,
+      0.47734705447913084
+    ],
+    [
+      0.8338671346608575,
+      0.7410450664713293,
+      0.6021760350652503,
+      0.6960430345915097,
+      0.6457224920179355,
+      0.6118598491582015,
+      0.7077063062303326,
+      0.8445100753755845,
+      0.7743149369777097,
+      0.6960876401630209,
+      0.563704035067547,
+      0.6645109259272806,
+      0.6918488979534883,
+      0.7941328092134323,
+      0.7342439961545402,
+      0.68060871695114,
+      0.7113391510682083,
+      0.9999999991114072,
+      0.703379673582929,
+      0.5680053512207037
+    ],
+    [
+      0.5979350592634332,
+      0.7926189998570131,
+      0.6660829465920313,
+      0.5405134498431261,
+      0.8364157183939217,
+      0.7031310619438411,
+      0.706212496749933,
+      0.7895422347938639,
+      0.7808565494155416,
+      0.679737875596347,
+      0.586569676452368,
+      0.6999144384589729,
+      0.7609309614467485,
+      0.7172429461208674,
+      0.8065475870941773,
+      0.6386307109278416,
+      0.8269828776595258,
+      0.703379673582929,
+      0.9999999988607725,
+      0.49967165315172973
+    ],
+    [
+      0.5894422396139256,
+      0.44204668584468,
+      0.668448670758374,
+      0.45414023859063346,
+      0.5712395367456065,
+      0.4503723171579961,
+      0.6362088605313707,
+      0.5588257861134207,
+      0.535149223326854,
+      0.5931298564886023,
+      0.6755190869654623,
+      0.6401244696878927,
+      0.447098332834156,
+      0.5024989469058446,
+      0.4408873502411331,
+      0.6786525722585361,
+      0.47734705447913084,
+      0.5680053512207037,
+      0.49967165315172973,
+      1.0000000024594229
+    ]
+  ],
+  "already_normalized_on_disk": false,
+  "tau": 0.1,
+  "alpha": 0.0,
+  "assignment_variant": "soft",
+  "vertex_threshold": 0.8,
+  "topic_bridge": {
+    "language_filter": "en",
+    "topic_post_counts": {
+      "ai_coding_innovations": 50,
+      "ai_copyright_theft": 50,
+      "ai_mass_surveillance": 50
+    },
+    "topic_mean_soft": {
+      "ai_coding_innovations": [
+        0.009958318992429665,
+        0.15504394277442812,
+        0.009500567294822338,
+        0.009358442798164286,
+        0.014540523356026267,
+        0.061167936780300615,
+        0.027449659448880132,
+        0.026796066735727524,
+        0.14495742897726663,
+        0.022014934944922907,
+        0.010916694295239487,
+        0.020408914584457136,
+        0.11889299564868391,
+        0.007780609780523278,
+        0.12956806123153353,
+        0.016349710924442134,
+        0.11017212921452052,
+        0.052155967711474675,
+        0.04757294974804755,
+        0.005394144758109439
+      ],
+      "ai_copyright_theft": [
+        0.02321718604965715,
+        0.02626161061213656,
+        0.058841765475829054,
+        0.007713918154763961,
+        0.040892455440434954,
+        0.01835229434986438,
+        0.13844062943734542,
+        0.029762516948370905,
+        0.040887509565195754,
+        0.13136735166416613,
+        0.06182077226302444,
+        0.10166202543391466,
+        0.026828551900547844,
+        0.01153443177555463,
+        0.03540927002978381,
+        0.09020158488830257,
+        0.03285099737403172,
+        0.05255006771390882,
+        0.026342555234823376,
+        0.04506250568834389
+      ],
+      "ai_mass_surveillance": [
+        0.1071141266872586,
+        0.04451125288540745,
+        0.014219285021207428,
+        0.05939399542897696,
+        0.01850615762313076,
+        0.01442702540869491,
+        0.03222142190319278,
+        0.0952660716738445,
+        0.058055707938048255,
+        0.028155434236141964,
+        0.011282289741785533,
+        0.02393275470497636,
+        0.027168220478459838,
+        0.05376179740104158,
+        0.0405703524552793,
+        0.027009643131028716,
+        0.03214623803259592,
+        0.2724357574489162,
+        0.027168748843316916,
+        0.012653718956696085
+      ]
+    },
+    "topic_mean_hard": {
+      "ai_coding_innovations": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ai_copyright_theft": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ai_mass_surveillance": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "nearest_posts_per_centroid": {
+    "0": [
+      {
+        "post_id": "ai_mass_surveillance_001",
+        "cosine": 0.7993684802179183,
+        "topic": "ai_mass_surveillance",
+        "language": "en",
+        "text": "Cities deploying real-time facial recognition on every corner. Dissent becomes a searchable database."
+      },
+      {
+        "post_id": "ai_mass_surveillance_048",
+        "cosine": 0.7796586608880399,
+        "topic": "ai_mass_surveillance",
+        "language": "zh",
+        "text": "一旦面部搜索变得便宜，每张上传的聚会照片都可能成为针对您的身份查询。"
+      },
+      {
+        "post_id": "ai_mass_surveillance_001",
+        "cosine": 0.7704883152689828,
+        "topic": "ai_mass_surveillance",
+        "language": "zh",
+        "text": "城市的每个角落都部署了实时面部识别。异议成为可搜索的数据库。"
+      },
+      {
+        "post_id": "ai_mass_surveillance_048",
+        "cosine": 0.762204146646799,
+        "topic": "ai_mass_surveillance",
+        "language": "en",
+        "text": "Once face search is cheap, every uploaded party photo is a potential identification query against you."
+      },
+      {
+        "post_id": "ai_mass_surveillance_015",
+        "cosine": 0.7602256074440441,
+        "topic": "ai_mass_surveillance",
+        "language": "en",
+        "text": "Municipalities claim anonymized heatmaps while vendors keep re-identification keys. Trust, but verify — then don't trust."
+      }
+    ],
+    "1": [
+      {
+        "post_id": "ai_coding_innovations_034",
+        "cosine": 0.841810632053952,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "AI-assisted git bisect summaries are saving hours when hunting regressions across long commit histories."
+      },
+      {
+        "post_id": "ai_coding_innovations_001",
+        "cosine": 0.8121566364797063,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "Just shipped a feature in half the time thanks to my AI coding assistant. The autocomplete actually understood my intent this sprint."
+      },
+      {
+        "post_id": "ai_coding_innovations_034",
+        "cosine": 0.7978354878380631,
+        "topic": "ai_coding_innovations",
+        "language": "zh",
+        "text": "在寻找长期提交历史记录中的回归时，人工智能辅助的 git bisect 摘要可以节省时间。"
+      },
+      {
+        "post_id": "ai_coding_innovations_004",
+        "cosine": 0.7925765183010939,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "Our team cut PR review time by 40% after adding an AI lint that explains *why* a change is risky."
+      },
+      {
+        "post_id": "ai_coding_innovations_032",
+        "cosine": 0.7894640379772832,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "Real-time collaborative coding with an AI observer that flags security smells mid-session. Instant feedback loop."
+      }
+    ],
+    "2": [
+      {
+        "post_id": "ai_copyright_theft_043",
+        "cosine": 0.8046625012954027,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "Creative unions organizing around AI consent are the only reason some platforms even mention compensation."
+      },
+      {
+        "post_id": "ai_copyright_theft_029",
+        "cosine": 0.7880409959026029,
+        "topic": "ai_copyright_theft",
+        "language": "es",
+        "text": "Apoyo las herramientas de inteligencia artificial que otorgan licencias justas a conjuntos de datos. Me opongo a las herramientas que tratan la cultura como un "
+      },
+      {
+        "post_id": "ai_copyright_theft_029",
+        "cosine": 0.7785860405739804,
+        "topic": "ai_copyright_theft",
+        "language": "zh",
+        "text": "我支持公平许可数据集的人工智能工具。我反对将文化视为自助餐的工具。"
+      },
+      {
+        "post_id": "ai_copyright_theft_043",
+        "cosine": 0.7648126380212926,
+        "topic": "ai_copyright_theft",
+        "language": "zh",
+        "text": "围绕人工智能同意组织的创意联盟是一些平台甚至提到补偿的唯一原因。"
+      },
+      {
+        "post_id": "ai_copyright_theft_043",
+        "cosine": 0.7591699393096023,
+        "topic": "ai_copyright_theft",
+        "language": "es",
+        "text": "Los sindicatos creativos que se organizan en torno al consentimiento de la IA son la única razón por la que algunas plataformas incluso mencionan la compensació"
+      }
+    ],
+    "3": [
+      {
+        "post_id": "ai_mass_surveillance_050",
+        "cosine": 0.8155176961650008,
+        "topic": "ai_mass_surveillance",
+        "language": "zh",
+        "text": "我想要更安全的城市。我不想要一份可搜索的目录，其中包含走过市政厅的每张面孔。"
+      },
+      {
+        "post_id": "ai_mass_surveillance_040",
+        "cosine": 0.7965474432753212,
+        "topic": "ai_mass_surveillance",
+        "language": "en",
+        "text": "Smart cities pitch efficiency; the architecture is continuous population instrumentation."
+      },
+      {
+        "post_id": "ai_mass_surveillance_050",
+        "cosine": 0.7963818231306764,
+        "topic": "ai_mass_surveillance",
+        "language": "en",
+        "text": "I want safer cities. I don't want a searchable catalog of every face that walked past city hall."
+      },
+      {
+        "post_id": "ai_mass_surveillance_025",
+        "cosine": 0.7871547084843838,
+        "topic": "ai_mass_surveillance",
+        "language": "ar",
+        "text": "تعد لوحات معلومات المدينة بـ \"شوارع أكثر أمانًا\" مع توسيع التحليلات الصوتية التي تعمل دائمًا بهدوء. اقرأ مستندات المشتريات."
+      },
+      {
+        "post_id": "ai_mass_surveillance_050",
+        "cosine": 0.7799923736121727,
+        "topic": "ai_mass_surveillance",
+        "language": "es",
+        "text": "Quiero ciudades más seguras. No quiero un catálogo con capacidad de búsqueda de cada rostro que pasó por el ayuntamiento."
+      }
+    ],
+    "4": [
+      {
+        "post_id": "ai_copyright_theft_048",
+        "cosine": 0.7752640375706256,
+        "topic": "ai_copyright_theft",
+        "language": "ar",
+        "text": "يقوم المحررون بقطع فناني الغلاف البشري لأن الذكاء الاصطناعي \"جيد بما فيه الكفاية\". جيدة بما فيه الكفاية بنيت على محافظ من؟"
+      },
+      {
+        "post_id": "ai_copyright_theft_003",
+        "cosine": 0.7706340332383277,
+        "topic": "ai_copyright_theft",
+        "language": "ar",
+        "text": "تمتلئ مواقع الصور المخزنة بنسخ الذكاء الاصطناعي للرسامين الأحياء. لا يستطيع العملاء معرفة ذلك؛ المبدعين يحصلون على أجر."
+      },
+      {
+        "post_id": "ai_copyright_theft_023",
+        "cosine": 0.7610929746986825,
+        "topic": "ai_copyright_theft",
+        "language": "ar",
+        "text": "تقدم وكالات التصميم تشكيلات \"متسارعة بالذكاء الاصطناعي\" مبنية على لوحات مزاجية مسروقة. العملاء يستحقون الشفافية."
+      },
+      {
+        "post_id": "ai_copyright_theft_012",
+        "cosine": 0.760802456560516,
+        "topic": "ai_copyright_theft",
+        "language": "ar",
+        "text": "وجد وكيل أعمالي ملخصات الذكاء الاصطناعي لمقالاتي تُباع على أنها \"بحث أصلي\". الإسناد معطل على الإنترنت."
+      },
+      {
+        "post_id": "ai_copyright_theft_016",
+        "cosine": 0.7480161974156505,
+        "topic": "ai_copyright_theft",
+        "language": "ar",
+        "text": "يقدم فنانو مفهوم اللعبة ملخصات تقول حرفيًا \"اجعلها مثل هذا المزيج من الذكاء الاصطناعي لمراجعنا غير المدفوعة\"."
+      }
+    ],
+    "5": [
+      {
+        "post_id": "ai_coding_innovations_035",
+        "cosine": 0.7654556473694758,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "The coding agent booked a calendar hold, opened a draft PR, and left a checklist. I just approved the plan."
+      },
+      {
+        "post_id": "ai_coding_innovations_037",
+        "cosine": 0.7478017572777735,
+        "topic": "ai_coding_innovations",
+        "language": "zh",
+        "text": "我仍然手工编写关键路径加密。其他一切？很高兴让助理起草和我核实。"
+      },
+      {
+        "post_id": "ai_coding_innovations_035",
+        "cosine": 0.7394779677755133,
+        "topic": "ai_coding_innovations",
+        "language": "es",
+        "text": "El agente codificador reservó una retención en el calendario, abrió un borrador de PR y dejó una lista de verificación. Acabo de aprobar el plan."
+      },
+      {
+        "post_id": "ai_coding_innovations_037",
+        "cosine": 0.7299184779483912,
+        "topic": "ai_coding_innovations",
+        "language": "ar",
+        "text": "ما زلت أكتب تشفير المسار الحرج يدويًا. كل شيء آخر؟ يسعدني السماح للمساعد بصياغة المشروع ولي بالتحقق."
+      },
+      {
+        "post_id": "ai_coding_innovations_046",
+        "cosine": 0.7197414816018026,
+        "topic": "ai_coding_innovations",
+        "language": "es",
+        "text": "Probé la codificación agente para un proyecto paralelo de fin de semana. Manejó andamios; Manejé las decisiones de sabor y producto."
+      }
+    ],
+    "6": [
+      {
+        "post_id": "ai_copyright_theft_001",
+        "cosine": 0.8003797630053792,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "Artists spent years developing a style. AI scraped it overnight without consent or credit. That's not innovation — that's theft."
+      },
+      {
+        "post_id": "ai_copyright_theft_008",
+        "cosine": 0.7942792497349023,
+        "topic": "ai_copyright_theft",
+        "language": "zh",
+        "text": "未经许可模仿在世艺术家声音的人工智能音乐应该是非法的，句号。"
+      },
+      {
+        "post_id": "ai_copyright_theft_023",
+        "cosine": 0.7812776876654273,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "Design agencies pitching 'AI-accelerated' decks built on stolen moodboards. Clients deserve transparency."
+      },
+      {
+        "post_id": "ai_copyright_theft_040",
+        "cosine": 0.7777537942526533,
+        "topic": "ai_copyright_theft",
+        "language": "zh",
+        "text": "翻译权也很重要。人工智能在没有达成协议的情况下翻译我的小说仍然侵犯了我的版权。"
+      },
+      {
+        "post_id": "ai_copyright_theft_008",
+        "cosine": 0.7765523530550572,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "AI music that mimics a living artist's voice without a license should be illegal, full stop."
+      }
+    ],
+    "7": [
+      {
+        "post_id": "ai_mass_surveillance_042",
+        "cosine": 0.7687168138888844,
+        "topic": "ai_mass_surveillance",
+        "language": "en",
+        "text": "AI that predicts 'radicalization' from library checkouts and search history is McCarthyism with GPUs."
+      },
+      {
+        "post_id": "ai_mass_surveillance_044",
+        "cosine": 0.7665352947360624,
+        "topic": "ai_mass_surveillance",
+        "language": "en",
+        "text": "Prisons using AI to score inmate 'risk' from call transcripts. Speech inside walls is never free."
+      },
+      {
+        "post_id": "ai_mass_surveillance_023",
+        "cosine": 0.75956518175843,
+        "topic": "ai_mass_surveillance",
+        "language": "zh",
+        "text": "零售商使用人工智能根据外观对购物者的盗窃风险进行评分。仪表板的歧视。"
+      },
+      {
+        "post_id": "ai_mass_surveillance_008",
+        "cosine": 0.7574522180552367,
+        "topic": "ai_mass_surveillance",
+        "language": "en",
+        "text": "When chat apps offer 'AI safety scanning' of private messages, assume content is classified at scale."
+      },
+      {
+        "post_id": "ai_mass_surveillance_011",
+        "cosine": 0.7567603308141,
+        "topic": "ai_mass_surveillance",
+        "language": "en",
+        "text": "Border AI that predicts 'intent' from microexpressions is prejudice automated and exported."
+      }
+    ],
+    "8": [
+      {
+        "post_id": "ai_coding_innovations_047",
+        "cosine": 0.8064668117986707,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "Static analysis plus LLM explanations means juniors understand *why* a rule exists, not just that it failed."
+      },
+      {
+        "post_id": "ai_coding_innovations_030",
+        "cosine": 0.8017829358101684,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "Generated a fuzzing harness with an LLM and it found a buffer edge case within an hour. Security loves this."
+      },
+      {
+        "post_id": "ai_coding_innovations_012",
+        "cosine": 0.7972665966970433,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "My terminal now has an AI that explains cryptic compiler errors in plain English. Peak 2020s developer experience."
+      },
+      {
+        "post_id": "ai_coding_innovations_032",
+        "cosine": 0.7959475763650354,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "Real-time collaborative coding with an AI observer that flags security smells mid-session. Instant feedback loop."
+      },
+      {
+        "post_id": "ai_coding_innovations_039",
+        "cosine": 0.7877095178134299,
+        "topic": "ai_coding_innovations",
+        "language": "es",
+        "text": "Las consultas en lenguaje natural sobre nuestro código base ('¿dónde validamos los JWT?') siempre superan al conocimiento tribal."
+      }
+    ],
+    "9": [
+      {
+        "post_id": "ai_copyright_theft_003",
+        "cosine": 0.8593130722695157,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "Stock photo sites are flooded with AI clones of living illustrators. Clients can't tell; creators get unpaid."
+      },
+      {
+        "post_id": "ai_copyright_theft_003",
+        "cosine": 0.8356420611589355,
+        "topic": "ai_copyright_theft",
+        "language": "zh",
+        "text": "库存照片网站充斥着活着的插画家的人工智能克隆。客户无法辨别；创作者得不到报酬。"
+      },
+      {
+        "post_id": "ai_copyright_theft_041",
+        "cosine": 0.8093737063504995,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "Studios using AI to replace background artists after training on those same artists' years of work. Cruel."
+      },
+      {
+        "post_id": "ai_copyright_theft_032",
+        "cosine": 0.7977652994754421,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "Children's book illustrators undercut by same-day AI picture books. Quality aside, the labor theft is real."
+      },
+      {
+        "post_id": "ai_copyright_theft_027",
+        "cosine": 0.7640163003630573,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "Fashion designers seeing AI knockoffs of unreleased sketches after studio leaks. IP law is lagging hard."
+      }
+    ],
+    "10": [
+      {
+        "post_id": "ai_copyright_theft_002",
+        "cosine": 0.8058749924506386,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "My novel is in training corpora and I never opted in. Publishers need to fight this harder."
+      },
+      {
+        "post_id": "ai_copyright_theft_002",
+        "cosine": 0.7727776921827277,
+        "topic": "ai_copyright_theft",
+        "language": "zh",
+        "text": "我的小说正在训练语料库中，但我从未选择加入。出版商需要更加努力地应对这一问题。"
+      },
+      {
+        "post_id": "ai_copyright_theft_002",
+        "cosine": 0.7512424288818075,
+        "topic": "ai_copyright_theft",
+        "language": "es",
+        "text": "Mi novela está en corpus de formación y nunca opté por participar. Los editores deben luchar más duro contra esto."
+      },
+      {
+        "post_id": "ai_copyright_theft_006",
+        "cosine": 0.7487348925016246,
+        "topic": "ai_copyright_theft",
+        "language": "zh",
+        "text": "作家：检查您的书籍是否出现在用于培训的影子图书馆中。我的就是这样。愤怒并不能掩盖它。"
+      },
+      {
+        "post_id": "ai_copyright_theft_006",
+        "cosine": 0.732648034143193,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "Writers: check if your books appear in shadow libraries used for training. Mine did. Furious doesn't cover it."
+      }
+    ],
+    "11": [
+      {
+        "post_id": "ai_copyright_theft_004",
+        "cosine": 0.7747086824808154,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "If a model can pastiche my brushwork, it learned from my portfolio. Pay us or don't train on us."
+      },
+      {
+        "post_id": "ai_copyright_theft_004",
+        "cosine": 0.7608033442667169,
+        "topic": "ai_copyright_theft",
+        "language": "zh",
+        "text": "如果一个模型可以模仿我的笔触，它是从我的作品集中学习的。付钱给我们，否则就不给我们训练。"
+      },
+      {
+        "post_id": "ai_copyright_theft_023",
+        "cosine": 0.7159718103503199,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "Design agencies pitching 'AI-accelerated' decks built on stolen moodboards. Clients deserve transparency."
+      },
+      {
+        "post_id": "ai_copyright_theft_014",
+        "cosine": 0.7115089862285906,
+        "topic": "ai_copyright_theft",
+        "language": "ar",
+        "text": "تعتبر سجلات إلغاء الاشتراك مزحة عندما تكون النماذج قد تم تدريبها بالفعل. نحن بحاجة إلى الاشتراك والتعويض، وليس مسرح الأعمال الورقية."
+      },
+      {
+        "post_id": "ai_copyright_theft_041",
+        "cosine": 0.7083535077294761,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "Studios using AI to replace background artists after training on those same artists' years of work. Cruel."
+      }
+    ],
+    "12": [
+      {
+        "post_id": "ai_coding_innovations_012",
+        "cosine": 0.8328204144309759,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "My terminal now has an AI that explains cryptic compiler errors in plain English. Peak 2020s developer experience."
+      },
+      {
+        "post_id": "ai_coding_innovations_022",
+        "cosine": 0.81934646771465,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "Multimodal coding assistants that read screenshots of UI bugs and propose CSS fixes are underrated right now."
+      },
+      {
+        "post_id": "ai_coding_innovations_049",
+        "cosine": 0.7790898442434635,
+        "topic": "ai_coding_innovations",
+        "language": "zh",
+        "text": "本月我看到的最好的演示：描述 Slack 中的错误，在线程中获取候选补丁。 Closing the loop."
+      },
+      {
+        "post_id": "ai_coding_innovations_022",
+        "cosine": 0.7763690075215108,
+        "topic": "ai_coding_innovations",
+        "language": "zh",
+        "text": "读取 UI 错误屏幕截图并提出 CSS 修复建议的多模式编码助手目前被低估了。"
+      },
+      {
+        "post_id": "ai_coding_innovations_006",
+        "cosine": 0.7752220054708725,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "The new AI debugger in my IDE traced a race condition across three services. Felt like science fiction."
+      }
+    ],
+    "13": [
+      {
+        "post_id": "ai_mass_surveillance_031",
+        "cosine": 0.7630971437382548,
+        "topic": "ai_mass_surveillance",
+        "language": "ar",
+        "text": "يقوم الملاك بتثبيت كاميرات الذكاء الاصطناعي للممرات لتنبيه \"الضيوف غير المصرح لهم\". يصبح الإسكان قائمة مراقبة."
+      },
+      {
+        "post_id": "ai_mass_surveillance_003",
+        "cosine": 0.7498034677096679,
+        "topic": "ai_mass_surveillance",
+        "language": "es",
+        "text": "Las imágenes de su timbre inteligente están alimentando a los modelos de proveedores. La conveniencia es el argumento de reclutamiento para la vigilancia."
+      },
+      {
+        "post_id": "ai_mass_surveillance_043",
+        "cosine": 0.7177905407689366,
+        "topic": "ai_mass_surveillance",
+        "language": "es",
+        "text": "Los robots de reparto que mapean las aceras con cámaras normalizan las flotas privadas como nodos de vigilancia móviles."
+      },
+      {
+        "post_id": "ai_mass_surveillance_003",
+        "cosine": 0.7146316538243265,
+        "topic": "ai_mass_surveillance",
+        "language": "ar",
+        "text": "إن لقطات جرس الباب الذكي الخاصة بك تغذي نماذج البائعين. الراحة هي الملعب التوظيف للمراقبة."
+      },
+      {
+        "post_id": "ai_mass_surveillance_035",
+        "cosine": 0.7048009741834926,
+        "topic": "ai_mass_surveillance",
+        "language": "ar",
+        "text": "يقوم صانعو السيارات بشحن كاميرات المقصورة مع الذكاء الاصطناعي الذي يلفت انتباه السائق. وجهك يصبح التليماتية."
+      }
+    ],
+    "14": [
+      {
+        "post_id": "ai_coding_innovations_010",
+        "cosine": 0.8317166786794341,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "We're experimenting with AI-generated API docs from OpenAPI specs. Onboarding new hires is dramatically smoother."
+      },
+      {
+        "post_id": "ai_coding_innovations_018",
+        "cosine": 0.8204208453989611,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "Sketching architecture on a whiteboard, photographing it, and getting a sequence diagram back from AI. Wild workflow."
+      },
+      {
+        "post_id": "ai_coding_innovations_036",
+        "cosine": 0.8193578432131334,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "Using AI to convert Figma annotations into typed props for our design components. Design-dev handoff improved."
+      },
+      {
+        "post_id": "ai_coding_innovations_001",
+        "cosine": 0.8022239013049416,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "Just shipped a feature in half the time thanks to my AI coding assistant. The autocomplete actually understood my intent this sprint."
+      },
+      {
+        "post_id": "ai_coding_innovations_029",
+        "cosine": 0.79288083437856,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "Our design system now has an AI that proposes accessible ARIA attributes when you paste a component."
+      }
+    ],
+    "15": [
+      {
+        "post_id": "ai_copyright_theft_047",
+        "cosine": 0.7906034574725435,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "Until models can prove clean data lineage, I assume every 'free' generator is built on unpaid labor."
+      },
+      {
+        "post_id": "ai_copyright_theft_047",
+        "cosine": 0.7726062783782348,
+        "topic": "ai_copyright_theft",
+        "language": "zh",
+        "text": "在模型能够证明干净的数据谱系之前，我假设每个“免费”发电机都是建立在无偿劳动的基础上的。"
+      },
+      {
+        "post_id": "ai_copyright_theft_034",
+        "cosine": 0.7388688015939202,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "My Patreon exclusives were scraped from a leak. Generators don't care about paywalls or trust."
+      },
+      {
+        "post_id": "ai_copyright_theft_024",
+        "cosine": 0.7385485442170436,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "If training data is the new oil, then unpaid creators are the unpaid oilfield workers. That has to change."
+      },
+      {
+        "post_id": "ai_copyright_theft_047",
+        "cosine": 0.7357540389647721,
+        "topic": "ai_copyright_theft",
+        "language": "ar",
+        "text": "وإلى أن تتمكن النماذج من إثبات نسب البيانات النظيف، أفترض أن كل مولد \"مجاني\" مبني على عمالة غير مدفوعة الأجر."
+      }
+    ],
+    "16": [
+      {
+        "post_id": "ai_coding_innovations_025",
+        "cosine": 0.8622806217549605,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "The future of coding is collaborative: human judgment plus AI speed. Today felt like that future arrived."
+      },
+      {
+        "post_id": "ai_coding_innovations_050",
+        "cosine": 0.8036244623544493,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "Cautious optimism: AI coding tools amplify careful engineers. They also amplify messy habits. Discipline still wins."
+      },
+      {
+        "post_id": "ai_coding_innovations_014",
+        "cosine": 0.7916756419091191,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "The best coding AIs aren't the ones that write the most code — they're the ones that ask clarifying questions first."
+      },
+      {
+        "post_id": "ai_coding_innovations_050",
+        "cosine": 0.7891862537569241,
+        "topic": "ai_coding_innovations",
+        "language": "zh",
+        "text": "谨慎乐观：人工智能编码工具增强了细心的工程师的能力。它们还会加剧杂乱的习惯。纪律仍然获胜。"
+      },
+      {
+        "post_id": "ai_coding_innovations_041",
+        "cosine": 0.7814127905613174,
+        "topic": "ai_coding_innovations",
+        "language": "en",
+        "text": "Teaching the intern: use AI for boilerplate, use your brain for invariants. That rule is sticking."
+      }
+    ],
+    "17": [
+      {
+        "post_id": "ai_mass_surveillance_028",
+        "cosine": 0.8703509590599982,
+        "topic": "ai_mass_surveillance",
+        "language": "en",
+        "text": "Police bodycams with live AI prompting officers — who audits the prompts when they escalate encounters?"
+      },
+      {
+        "post_id": "ai_mass_surveillance_001",
+        "cosine": 0.8412860655306874,
+        "topic": "ai_mass_surveillance",
+        "language": "en",
+        "text": "Cities deploying real-time facial recognition on every corner. Dissent becomes a searchable database."
+      },
+      {
+        "post_id": "ai_mass_surveillance_045",
+        "cosine": 0.8265760733241003,
+        "topic": "ai_mass_surveillance",
+        "language": "en",
+        "text": "Corporate campuses tracking badge plus face continuous authentication. Workers are perpetual suspects."
+      },
+      {
+        "post_id": "ai_mass_surveillance_012",
+        "cosine": 0.8226147575680149,
+        "topic": "ai_mass_surveillance",
+        "language": "en",
+        "text": "Employers monitoring keystroke dynamics and webcam attention scores. Productivity theater meets dystopia."
+      },
+      {
+        "post_id": "ai_mass_surveillance_011",
+        "cosine": 0.8208851182954359,
+        "topic": "ai_mass_surveillance",
+        "language": "en",
+        "text": "Border AI that predicts 'intent' from microexpressions is prejudice automated and exported."
+      }
+    ],
+    "18": [
+      {
+        "post_id": "ai_coding_innovations_041",
+        "cosine": 0.7526252546973125,
+        "topic": "ai_coding_innovations",
+        "language": "ar",
+        "text": "تعليم المتدرب: استخدم الذكاء الاصطناعي للنموذج المعياري، واستخدم عقلك للثوابت. هذه القاعدة ثابتة."
+      },
+      {
+        "post_id": "ai_coding_innovations_023",
+        "cosine": 0.7481772185665787,
+        "topic": "ai_coding_innovations",
+        "language": "ar",
+        "text": "لقد قمنا بضبط نموذج صغير في دليل النمط الداخلي الخاص بنا. انخفض ضجيج الاختلاف في اقتراحات الذكاء الاصطناعي بين عشية وضحاها."
+      },
+      {
+        "post_id": "ai_coding_innovations_027",
+        "cosine": 0.7313306737753129,
+        "topic": "ai_coding_innovations",
+        "language": "ar",
+        "text": "اقترح الذكاء الاصطناعي حفظ مسار ساخن لم يسبق لي أن قمت بتحديده. أكدت المعايير الفوز 3 ×. فطيرة متواضعة."
+      },
+      {
+        "post_id": "ai_coding_innovations_028",
+        "cosine": 0.7304018239151431,
+        "topic": "ai_coding_innovations",
+        "language": "ar",
+        "text": "يعد الاقتران مع الذكاء الاصطناعي في الإعداد للمقابلة بأسلوب LeetCode فعالاً بشكل غريب. إنه يجبرك على التعبير عن المقايضات اللفظية."
+      },
+      {
+        "post_id": "ai_coding_innovations_006",
+        "cosine": 0.7288020795132948,
+        "topic": "ai_coding_innovations",
+        "language": "ar",
+        "text": "قام مصحح أخطاء الذكاء الاصطناعي الجديد في IDE بتتبع حالة السباق عبر ثلاث خدمات. شعرت وكأنها خيال علمي."
+      }
+    ],
+    "19": [
+      {
+        "post_id": "ai_copyright_theft_011",
+        "cosine": 0.7954910648032458,
+        "topic": "ai_copyright_theft",
+        "language": "zh",
+        "text": "合理使用绝不意味着涵盖整个图书馆的工业规模摄取。法院需要这么说。"
+      },
+      {
+        "post_id": "ai_copyright_theft_011",
+        "cosine": 0.7946242174452407,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "Fair use was never meant to cover industrial-scale ingestion of entire libraries. Courts need to say so."
+      },
+      {
+        "post_id": "ai_copyright_theft_011",
+        "cosine": 0.7770290242831805,
+        "topic": "ai_copyright_theft",
+        "language": "ar",
+        "text": "لم يكن المقصود من الاستخدام العادل أبدًا تغطية استيعاب مكتبات بأكملها على نطاق صناعي. المحاكم بحاجة إلى أن تقول ذلك."
+      },
+      {
+        "post_id": "ai_copyright_theft_033",
+        "cosine": 0.7728773582713132,
+        "topic": "ai_copyright_theft",
+        "language": "en",
+        "text": "Collective licensing could work — if platforms admit they need it instead of hiding behind 'publicly available'."
+      },
+      {
+        "post_id": "ai_copyright_theft_033",
+        "cosine": 0.7703757381744331,
+        "topic": "ai_copyright_theft",
+        "language": "es",
+        "text": "Las licencias colectivas podrían funcionar, si las plataformas admiten que las necesitan en lugar de esconderse detrás de \"disponibles públicamente\"."
+      }
+    ]
+  },
+  "user_attention_soft": {
+    "n_users": 1000,
+    "mean_n_posts": 100.0,
+    "entropy": {
+      "mean": 2.8093176283557275,
+      "std": 0.07218302308429488,
+      "p10": 2.6964530605101626,
+      "p50": 2.8455780681158664,
+      "p90": 2.880431958216597,
+      "max_entropy": 2.995732273553991
+    },
+    "vertex_threshold": 0.8,
+    "fraction_near_vertex_max_w": 0.0,
+    "fraction_near_each_vertex": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0,
+      "14": 0.0,
+      "15": 0.0,
+      "16": 0.0,
+      "17": 0.0,
+      "18": 0.0,
+      "19": 0.0
+    },
+    "mean_weights": [
+      0.04685742660701662,
+      0.07527915752044985,
+      0.027476255642728507,
+      0.025545808145272075,
+      0.024624327669928236,
+      0.03130698393227394,
+      0.06593115674036701,
+      0.05068101558639914,
+      0.0813084610746968,
+      0.06040965217618423,
+      0.027955916267416333,
+      0.04859027400296378,
+      0.05762078524993615,
+      0.02440606583193816,
+      0.06851187642832565,
+      0.044458011926022806,
+      0.05838101842308794,
+      0.12595731184507353,
+      0.03369347178888956,
+      0.021005023141029575
+    ],
+    "global_topic_mass": [
+      0.04685742660701662,
+      0.07527915752044985,
+      0.027476255642728507,
+      0.025545808145272075,
+      0.024624327669928236,
+      0.03130698393227394,
+      0.06593115674036701,
+      0.05068101558639914,
+      0.0813084610746968,
+      0.06040965217618423,
+      0.027955916267416333,
+      0.04859027400296378,
+      0.05762078524993615,
+      0.02440606583193816,
+      0.06851187642832565,
+      0.044458011926022806,
+      0.05838101842308794,
+      0.12595731184507353,
+      0.03369347178888956,
+      0.021005023141029575
+    ]
+  },
+  "user_attention_hard": {
+    "n_users": 1000,
+    "mean_n_posts": 100.0,
+    "entropy": {
+      "mean": 0.827136540626408,
+      "std": 0.19049685877345346,
+      "p10": 0.5710602622606581,
+      "p50": 0.8973514807103551,
+      "p90": 1.085730633912871,
+      "max_entropy": 2.995732273553991
+    },
+    "vertex_threshold": 0.8,
+    "fraction_near_vertex_max_w": 0.206,
+    "fraction_near_each_vertex": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.071,
+      "7": 0.0,
+      "8": 0.074,
+      "9": 0.0,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0,
+      "14": 0.0,
+      "15": 0.0,
+      "16": 0.0,
+      "17": 0.061,
+      "18": 0.0,
+      "19": 0.0
+    },
+    "mean_weights": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.33233000000000035,
+      0.0,
+      0.33322999999999986,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.33444000000000024,
+      0.0,
+      0.0
+    ],
+    "global_topic_mass": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.33233000000000035,
+      0.0,
+      0.33322999999999986,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.33444000000000024,
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-07-31T06:44:07.310303+00:00",
+  "emb_dir": "/workspace/data/embeddings/qwen3-embedding-0.6b",
+  "embeddings": "/workspace/data/embeddings/qwen3-embedding-0.6b/embeddings.npy",
+  "n_clusters": 20,
+  "random_state": 42,
+  "n_init": 10,
+  "subsample": null,
+  "n_fit": 600,
+  "n_posts": 600,
+  "embedding_dim": 1024,
+  "tau": 0.1,
+  "alpha": 0.0,
+  "assignment_variant": "soft",
+  "bridge_language": "en",
+  "user_posts": "/workspace/data/user_posts.jsonl",
+  "user_embeddings": null,
+  "mode": "topic_bridge",
+  "algorithm": "sklearn.cluster.KMeans on L2-normalized vectors (spherical)",
+  "seed_notes": "numpy default_rng(random_state) for subsample; KMeans random_state set."
+}

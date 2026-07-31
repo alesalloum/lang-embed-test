@@ -1,0 +1,151 @@
+{
+  "attention_csv": "/workspace/results/topic_attention_k20/user_attention_soft.csv",
+  "n_users": 1000,
+  "n_microtopics": 20,
+  "microtopic_columns": [
+    "w0",
+    "w1",
+    "w2",
+    "w3",
+    "w4",
+    "w5",
+    "w6",
+    "w7",
+    "w8",
+    "w9",
+    "w10",
+    "w11",
+    "w12",
+    "w13",
+    "w14",
+    "w15",
+    "w16",
+    "w17",
+    "w18",
+    "w19"
+  ],
+  "k_min": 1,
+  "k_max": 10,
+  "nmf_hyperparameters": {
+    "solver": "mu",
+    "beta_loss": "kullback-leibler",
+    "init": "nndsvda",
+    "max_iter": 1000,
+    "random_state": 42
+  },
+  "kl_baseline_X_bar": 71.18667453253968,
+  "row_sum_check_max_abs_err": 3.3306690738754696e-16,
+  "metrics": [
+    {
+      "k": 1,
+      "kl_loss": 71.18667453253968,
+      "deviance_explained": 0.0,
+      "deviance_explained_pct": 0.0,
+      "perplexity": 17.823259234328916,
+      "n_iter": 20
+    },
+    {
+      "k": 2,
+      "kl_loss": 37.06248062101032,
+      "deviance_explained": 0.47936210162382387,
+      "deviance_explained_pct": 47.93621016238239,
+      "perplexity": 17.2253150835639,
+      "n_iter": 60
+    },
+    {
+      "k": 3,
+      "kl_loss": 0.007947398672224737,
+      "deviance_explained": 0.9998883583377871,
+      "deviance_explained_pct": 99.98883583377871,
+      "perplexity": 16.598719863536047,
+      "n_iter": 570
+    },
+    {
+      "k": 4,
+      "kl_loss": 0.00623963147085534,
+      "deviance_explained": 0.9999123483220445,
+      "deviance_explained_pct": 99.99123483220444,
+      "perplexity": 16.598691516810874,
+      "n_iter": 490
+    },
+    {
+      "k": 5,
+      "kl_loss": 0.0052856436903403695,
+      "deviance_explained": 0.9999257495349368,
+      "deviance_explained_pct": 99.99257495349369,
+      "perplexity": 16.598675681869544,
+      "n_iter": 460
+    },
+    {
+      "k": 6,
+      "kl_loss": 0.005008384140527929,
+      "deviance_explained": 0.999929644358675,
+      "deviance_explained_pct": 99.9929644358675,
+      "perplexity": 16.59867107972883,
+      "n_iter": 420
+    },
+    {
+      "k": 7,
+      "kl_loss": 0.004689070678591057,
+      "deviance_explained": 0.9999341299378095,
+      "deviance_explained_pct": 99.99341299378095,
+      "perplexity": 16.598665779550576,
+      "n_iter": 400
+    },
+    {
+      "k": 8,
+      "kl_loss": 0.004397197424062266,
+      "deviance_explained": 0.99993823004863,
+      "deviance_explained_pct": 99.993823004863,
+      "perplexity": 16.598660934844652,
+      "n_iter": 390
+    },
+    {
+      "k": 9,
+      "kl_loss": 0.004047306401164549,
+      "deviance_explained": 0.9999431451682813,
+      "deviance_explained_pct": 99.99431451682813,
+      "perplexity": 16.598655127123244,
+      "n_iter": 390
+    },
+    {
+      "k": 10,
+      "kl_loss": 0.003986691916428336,
+      "deviance_explained": 0.9999439966546744,
+      "deviance_explained_pct": 99.99439966546744,
+      "perplexity": 16.59865412100435,
+      "n_iter": 380
+    }
+  ],
+  "elbow": {
+    "elbow_k": 3,
+    "knee_distance_k": 3,
+    "gain_flatten_k": 3,
+    "method": "min(knee_distance, gain_flatten)",
+    "marginal_gains_pct": [
+      47.93621016238239,
+      52.05262567139632,
+      0.002398998425732657,
+      0.001340121289246099,
+      0.0003894823738193054,
+      0.0004485579134438922,
+      0.00041001108205307446,
+      0.0004915119651229816,
+      8.51486393145251e-05
+    ],
+    "knee_distances": [
+      null,
+      0.26041175653809134,
+      0.5499325964882854,
+      0.47138214078706064,
+      0.39282419727445683,
+      0.31425953135314,
+      0.23569528318236532,
+      0.15713076242906643,
+      0.07856681800631492,
+      null
+    ]
+  },
+  "recommended_k": 3,
+  "notes": "X is soft user attention over KMeans microtopics. With topic-bridge mode, user rows are mixtures of a small number of topic\u2192microtopic signatures, so the effective rank is often near the number of ground-truth topics (here 3)."
+}
